@@ -10,7 +10,7 @@ import {useNavigate} from "react-router-dom"
 const Header=()=>{
 
   const navigate=useNavigate();
-
+  console.log(navigate);
 return(
   <div id="main">
   <div>
