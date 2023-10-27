@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;1,400&display=swap');
+@mixin page-heading{
+  border-radius: 5px;
+  border: 1px solid rgba(243, 191, 25, 0.30);
+  background: rgba(243, 191, 25, 0.08);
+  color: #F3BF19;
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 500;
+  width: max-content;
+  padding: 0px 18px;
+}

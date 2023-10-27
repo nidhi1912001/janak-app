@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,400&display=swap');
+#homeMain {
+
+  #home1 {
+    height: 480px;
+    background-blend-mode: lighten;
+    background-image: url('../../Assets/image/main-banner.png');
+    //object-fit:none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 90%;
+    background-color: #040d2c;
+
+
+    div {
+      height: 500px;
+      margin: 0px 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h1 {
+        color: white;
+        margin: 0;
+        font-weight: bolder;
+        font-size: 60px;
+
+        span {
+          color: #1a87c8;
+          display: block;
+        }
+
+        em {
+          color: #f4bf19;
+          position: relative;
+        }
+
+        em:before {
+          content: "ı";
+          position: absolute;
+          color: #1a87c8;
+        }
+      }
+
+      p {
+        color: white;
+        opacity: 0.7;
+      }
+    }
+
+  }
+  #home2 {
+  margin: 80px 100px;
+  display: grid;
+  gap: 30px;
+
+   #inputText {
+    background-color: #1a87c8;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding:60px 120px;
+
+    h3 {
+      margin-top: 0;
+      color: white;
+      font-size: 30px;
+      font-family: poppins;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .search {
+      position: relative;
+
+      input {
+        width: 100%;
+        border-radius: 40px;
+        border: none;
+        padding: 28px;
+
+      }
+      ::placeholder{
+        justify-content: center;
+        align-items: flex-start;
+        font-size: 20px;
+        font-weight: 500;
+        color: black;
+        font-family: poppins;
+
+      }
+
+      .icon {
+        position: absolute;
+        right: 17px;
+        top: 5px;
+        font-size: 58px;
+        color: white;
+        border-radius: 40px;
+        padding: 12px;
+
+      }
+    }
+  }
+
+  #search-cartoon {
+    box-shadow: 0px 5.84241px 5.84241px 0px rgba(0, 0, 0, 0.03);
+    display: flex;
+    gap: 20px;
+    padding: 60px;
+
+    #text {
+      color: #5F5F5F;
+      font-family: Ethos Nova;
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 140%;
+      display: grid;
+      gap: 20px;
+
+
+
+      //height: 200px;
+      //overflow: auto;
+    }
+  }
+}
+}
+
+
+
+
+
+

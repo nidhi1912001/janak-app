@@ -1,0 +1,27 @@
+@use "src/App";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;1,400&display=swap');
+
+.products-container{
+  .container-top{
+    text-align: center;
+    .heading{
+     margin: auto;
+      @include App.page-heading
+
+    }
+    p{
+      color: #0E0E18;
+      font-family: Poppins;
+      font-size: 40px;
+      font-weight: 600;
+
+      span{
+        color: #1A87C9;
+        font-family: Poppins;
+        font-size: 40px;
+        font-weight: 600;
+      }
+    }
+  }
+
+}

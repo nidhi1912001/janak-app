@@ -1,14 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,400&display=swap');
 #main{
   display: flex;
   justify-content: space-between;
-}
-.login{
-  display: flex;
-  background-color: #61dafb;
-  border-radius: 10px;
-  padding: 2px;
+  align-items: center;
+  padding: 20px 100px;
+  #pages{
+    display: flex;
+    gap: 50px;
+    a{
+      text-decoration: none;
+      color: var(--accent-100, #0E0E18);
+      font-family: Ethos Nova;
+      font-weight: 700;
+      font-size: 18px;
+    }
+    a:focus
+    {
+      text-decoration: underline;
+      text-decoration-color: #f4bf19;
+      text-underline-offset: 50%;
+      text-decoration-thickness:3px;
+      color: #1a87c8;
+    }
 
+  }
 }
+
+#login{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #1a87c8;
+  border-radius: 30px;
+  padding: 8px 15px;
+
+  div{
+    display: flex;
+    gap: 5px;
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+    font-family: poppins;
+    font-size: small;
+  }
+  span{
+    color: white;
+    font-size: small;
+  }
+  .icon{
+    background-color: #f5bf03;
+    border-radius: 20px;
+    color: white;
+    font-size: 30px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

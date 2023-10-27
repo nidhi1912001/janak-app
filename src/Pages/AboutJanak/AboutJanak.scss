@@ -1,0 +1,121 @@
+
+@use "src/App";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;1,400&display=swap');
+.about{
+  display: flex;
+  gap: 75px;
+  margin: 0px 100px;
+    .about-left{
+      position: relative;
+
+      img{
+        width: 520px;
+        height: 500px;
+        margin: 25px 0px;
+      }
+
+      .box{
+        position: absolute;
+        top: 50px;
+        right: -39px;
+        border-radius: 10px;
+        background: #1A87C9;
+        display: flex;
+        gap: 18px;
+        padding: 0px 25px;
+        width: 235px;
+
+        .ten{
+
+          color: #FFF;
+          font-family: Poppins;
+          font-size: 45px;
+          font-style: normal;
+          font-weight: 700;
+          sup{
+            font-size: 20px;
+            font-weight:700
+          }
+
+        }
+        .experience{
+          margin: auto;
+          color: #FFF;
+          font-family: Poppins;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 18px;
+
+        }
+      }
+    }
+    .about-right{
+             display: flex;
+             flex-direction: column;
+             gap: 15px;
+      .heading{
+        @include App.page-heading
+        }
+      .container {
+
+        display: grid;
+        gap: 30px;
+
+
+        .container-start {
+          color: #0E0E18;
+          font-family: Poppins;
+          font-size: 48px;
+          font-weight: 600;
+          line-height: 90%;
+          line-height: 96%;
+
+
+
+
+
+          span {
+            color: #1A87C9;
+            font-family: Poppins;
+            font-size: 48px;
+            font-weight: 800;
+          }
+        }
+        .container-middle{
+          color: #5F5F5F;
+          font-family: Ethos Nova;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 116%;
+        }
+        .container-end{
+          display: grid;
+          gap: 10px;
+          h5 {
+            color: #1A87C9;
+            font-family: Ethos Nova;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 800
+          }
+          .end-detail {
+            display: flex;
+            gap: 12px;
+            span{
+              width: 12px;
+              background: #F3BF19;
+            }
+            p {
+              color: var(--accent-100, #0E0E18);
+              font-family: Ethos Nova;
+              font-size: 23px;
+              font-style: italic;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+}
