@@ -5,6 +5,7 @@ import{useState, useEffect} from 'react'
 import cartoon from "../../Assets/image/search-cartoon.png"
 import ReactTyped from "react-typed";
 import AboutJanak from "../AboutJanak/AboutJanak";
+import Partners from '../Partners/Partners'
 const Home=()=>{
 
   const [currentText, setCurrentText] = useState('' );
@@ -65,6 +66,7 @@ const Home=()=>{
        </div>
 
       <div><AboutJanak/></div>
+      <div><Partners/></div>
 
     </div>
   )

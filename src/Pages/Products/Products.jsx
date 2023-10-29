@@ -1,6 +1,6 @@
 import React from 'react'
 import "./products.scss"
- import  MagnifyingLensSvg from "../../Assets/image/svg"
+ 
 const Products=()=>{
 
   return(
