@@ -69,23 +69,21 @@
 
 }
 .partners-bottom{
-  position: relative;
-  .coming-soon{
-    background-image: url("../../Assets/image/coming-soon-banner.png");
-
-    background-repeat: no-repeat;
-    background-position: left;
-    height: 730px;
-    position: relative;
+  background-image: url("../../Assets/image/coming-soon-banner.png");
+ background-repeat: no-repeat;
+  background-position: left;
+  height: 730px;
 
   }
   .partner-bottom-content{
-    position: absolute;
-    display: grid;
-    justify-content: center;
-    top:50px;
-    right: 0;
-    width: 50%;
+    text-align: left;
+    // margin-left: auto;
+    max-width: 50%;
+   
+    margin: 30px 0px 30px auto ;  
+    height: 730px;
+    
+     
     .label{
       border: 1px solid rgba(255, 255, 255, 0.3);
       padding: 0px 10px;
@@ -122,7 +120,6 @@
     }
 
 
-
-  }
+  
 }
 
