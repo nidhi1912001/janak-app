@@ -28,7 +28,7 @@ return(
     </div>
 
     <div id="login">
-      <div>
+      <div >
       <Link onClick={()=>navigate(<Login/>)}  >Login</Link>
       <span>/</span>
       <Link onClick={()=>navigate(<SignUp/>)}>Sign Up</Link>

@@ -2,11 +2,13 @@
 @mixin page-heading{
   border-radius: 5px;
   border: 1px solid rgba(243, 191, 25, 0.30);
-  background: rgba(243, 191, 25, 0.08);
+  background: rgba(243, 191, 25, 0.08) ;
+
   color: #F3BF19;
   font-family: Poppins;
   font-size: 22px;
   font-weight: 500;
   width: max-content;
   padding: 0px 18px;
+  line-height: 26.85px;
 }

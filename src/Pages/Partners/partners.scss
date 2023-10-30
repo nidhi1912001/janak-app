@@ -2,7 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;1,400&display=swap");
 
 .partners-container {
+  background: rgba(231, 243, 250, 0.2);
+  padding: 50px 190px;
+  display: grid;
+  gap: 25px;
+
   .partners-top {
+    display: grid;
+    gap: 10px;
+
     .heading {
       margin: auto;
       @include App.page-heading;
@@ -10,35 +18,111 @@
     p {
       font-family: Poppins;
       font-weight: 600;
-      font-size: 40px;
+      font-size: 55px;
       text-align: center;
 
       span {
         color: #1a87c9;
+
       }
     }
   }
   .partners-details {
     display: flex;
-    gap: 50px;
-    padding: 15px 50px;
-    margin: 0px 100px;
+    gap: 75px;
+    border: 3px dashed rgba(234, 234, 234, 1);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 30px 70px;
+
+
     img {
-      width: 280px;
+      width: 300px;
       height: 137px;
     }
     .border {
         border-left: 1px solid #D1D1D1;
-        height: 100px;
+
     }
     p {
-    
+      font-family: Ethos Nova;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 33.6px;
+      color: rgba(95, 95, 95, 1);
+    }
+  }
+  .carousel{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+   a {
+     border: 1px solid rgba(231, 231, 231, 1);
+     border-radius: 30px;
+     width: 35px;
+
+    }
+    a:hover {
+      border: 1px solid rgba(26, 135, 201, 1);
+    }
+   }
+
+}
+.partners-bottom{
+  position: relative;
+  .coming-soon{
+    background-image: url("../../Assets/image/coming-soon-banner.png");
+
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 730px;
+    position: relative;
+
+  }
+  .partner-bottom-content{
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    top:50px;
+    right: 0;
+    width: 50%;
+    .label{
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 0px 10px;
+      border-radius: 5px;
+      font-family: Poppins;
+      font-size: 25px;
+      font-weight: 500;
+      line-height: 29px;
+      text-align: left;
+      color: rgba(255, 255, 255, 1);
+
+
+    }
+    .heading{
+      font-size: 55px;
+      font-family: Poppins;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 1);
+      line-height: 60px;
+
+      span{
+        display: block;
+       color:  rgba(26, 135, 201, 1)
+      }
+    }
+    .bottom-content{
       font-family: Ethos Nova;
       font-size: 20px;
       font-weight: 500;
-      line-height: 28px;
-      letter-spacing: 0em;
-       line-height: 28px;
+      line-height: 30px;
+      text-align: left;
+      color: rgba(255, 255, 255, 0.75);
+
     }
+
+
+
   }
 }
+
