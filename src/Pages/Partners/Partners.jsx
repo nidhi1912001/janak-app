@@ -37,7 +37,7 @@ const Partners = () => {
     setSelectData({ ...selectData, img: ele.img, content: ele.content });
   };
   return (
-    <div>
+    <div className="partners-main">
       <div className="partners-container">
         <div className="partners-top">
           <div className="heading"> Our Partners </div>
@@ -72,7 +72,7 @@ const Partners = () => {
             knowledge and enhancing its ability to assist users with their legal
             queries
           </p>
-          <img src={joinWaitlist} />
+          <img className="joinWaitlist"  src={joinWaitlist} />
         </div>
       </div>
     </div>

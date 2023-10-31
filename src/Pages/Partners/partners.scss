@@ -1,6 +1,7 @@
 @use "src/App";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;1,400&display=swap");
-
+.partners-main{
+  display: grid;
 .partners-container {
   background: rgba(231, 243, 250, 0.2);
   padding: 50px 190px;
@@ -56,6 +57,7 @@
     display: flex;
     gap: 15px;
     justify-content: center;
+    margin-top: 30px;
    a {
      border: 1px solid rgba(231, 231, 231, 1);
      border-radius: 30px;
@@ -70,46 +72,54 @@
 }
 .partners-bottom{
   background-image: url("../../Assets/image/coming-soon-banner.png");
- background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: left;
   height: 730px;
 
   }
-  .partner-bottom-content{
+  .partner-bottom-content {
     text-align: left;
-    // margin-left: auto;
+    margin-left: auto;
+    padding: 0px 85px;
     max-width: 50%;
-   
-    margin: 30px 0px 30px auto ;  
-    height: 730px;
-    
-     
-    .label{
+    height: 725px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+
+
+    .label {
       border: 1px solid rgba(255, 255, 255, 0.3);
-      padding: 0px 10px;
+      padding: 0px 15px;
       border-radius: 5px;
       font-family: Poppins;
-      font-size: 25px;
-      font-weight: 500;
+      font-size: 24px;
+      font-weight: 400;
       line-height: 29px;
       text-align: left;
       color: rgba(255, 255, 255, 1);
+      background-color: rgba(255, 255, 255, 0.3);
 
 
     }
-    .heading{
+
+    .heading {
       font-size: 55px;
       font-family: Poppins;
       font-weight: 700;
       color: rgba(255, 255, 255, 1);
       line-height: 60px;
 
-      span{
+      span {
+        font-size: 55px;
         display: block;
-       color:  rgba(26, 135, 201, 1)
+        color: rgba(26, 135, 201, 1)
       }
     }
-    .bottom-content{
+
+    .bottom-content {
       font-family: Ethos Nova;
       font-size: 20px;
       font-weight: 500;
@@ -118,8 +128,11 @@
       color: rgba(255, 255, 255, 0.75);
 
     }
+    .joinWaitlist{
+      width: 130px;
+    }
 
 
-  
+  }
 }
 

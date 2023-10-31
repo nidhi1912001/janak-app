@@ -7,6 +7,7 @@ import ReactTyped from "react-typed";
 import AboutJanak from "../AboutJanak/AboutJanak";
 import Partners from '../Partners/Partners'
 import Products from "../Products/Products";
+import News from "../News/News";
 const Home=()=>{
 
   const [currentText, setCurrentText] = useState('' );
@@ -66,9 +67,11 @@ const Home=()=>{
               </div>
        </div>
 
-      <div><AboutJanak/></div>
-      <div><Products/></div>
-      <div><Partners/></div>
+      <AboutJanak/>
+     <Products/>
+     <Partners/>
+     <News/>
+
 
     </div>
   )

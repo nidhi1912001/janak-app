@@ -3,38 +3,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;1,400&display=swap');
 .about{
-  display: flex;
-  gap: 75px;
-  margin: 0px 122px;
+   display: grid;
+   grid-template-columns: 55% 45%;
+   //margin: 0px 122px;
+  padding: 50px 122px;
+  background-color: rgba(231, 243, 250, 0.2);
+
     .about-left{
       position: relative;
 
       img{
-        width: 520px;
-        height: 500px;
-        margin: 25px 0px;
+        width: 600px;
+        height: 560px;
+        margin: 20px 0px;
+
       }
 
       .box{
         position: absolute;
         top: 50px;
-        right: -39px;
+        right: 88px;
         border-radius: 10px;
         background: #1A87C9;
         display: flex;
-        gap: 18px;
-        padding: 0px 25px;
-        width: 235px;
+        gap: 20px;
+        padding: 0px 20px;
+        width: 280px;
 
         .ten{
 
           color: #FFF;
           font-family: Poppins;
-          font-size: 45px;
+          font-size: 50px;
           font-style: normal;
-          font-weight: 700;
+          font-weight: 600;
           sup{
-            font-size: 20px;
+            font-size: 25px;
             font-weight:700
           }
 
@@ -43,9 +47,9 @@
           margin: auto;
           color: #FFF;
           font-family: Poppins;
-          font-size: 14px;
+          font-size: 15px;
           font-weight: 500;
-          line-height: 18px;
+          line-height: 24px;
 
         }
       }
@@ -53,33 +57,26 @@
     .about-right{
              display: flex;
              flex-direction: column;
-             gap: 15px;
+             gap: 25px;
       .heading{
         @include App.page-heading
         }
       .container {
 
         display: grid;
-        gap: 30px;
+        gap: 40px;
 
 
         .container-start {
           color: #0E0E18;
           font-family: Poppins;
-          font-size: 48px;
+          font-size: 50px;
           font-weight: 600;
-          line-height: 90%;
-          line-height: 96%;
-
-
-
-
+          line-height: 50px;
 
           span {
             color: #1A87C9;
-            font-family: Poppins;
-            font-size: 48px;
-            font-weight: 800;
+
           }
         }
         .container-middle{
@@ -88,7 +85,7 @@
           font-size: 20px;
           font-style: normal;
           font-weight: 500;
-          line-height: 116%;
+          line-height:30px;
         }
         .container-end{
           display: grid;

@@ -1,0 +1,46 @@
+@use "src/App";
+
+.news{
+  padding: 50px 0px;
+  .news-top{
+    margin: auto;
+    display: grid;
+    gap:10px;
+
+    .heading{
+      margin: auto;
+      @include App.page-heading;
+
+    }
+    p{
+
+      font-family: Poppins;
+      font-size: 55px;
+      font-weight: 700;
+      line-height: 65px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: rgba(14, 14, 24, 1);
+
+      span{
+        color: rgba(26, 135, 201, 1);
+      }
+
+    }
+  }
+  .news-bottom{
+    display: flex;
+    .news-bottom-card{
+
+      .card-detail{
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 35px;
+        letter-spacing: 0em;
+        text-align: left;
+
+      }
+    }
+  }
+}
