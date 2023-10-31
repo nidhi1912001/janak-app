@@ -7,12 +7,14 @@ import {BsArrowUpRight} from "react-icons/bs"
 import{ImArrowUpRight2} from "react-icons/im"
 import './Header.scss'
 import {useNavigate} from "react-router-dom"
+import Container from '../Container/Container';
 
 const Header=()=>{
 
   const navigate=useNavigate();
   console.log(navigate);
 return(
+  <Container>
   <div id="main">
     <div>
       <img src={logo} alt="logo"/>
@@ -37,6 +39,7 @@ return(
       <ImArrowUpRight2 className="icon"/>
     </div>
   </div>
+  </Container>
 )
 }
 
