@@ -3,6 +3,7 @@ import { SlSocialFacebook, SlSocialInstagram, SlSocialLinkedin, SlSocialTwitter 
 import{TiSocialFacebook,TiSocialTwitter,TiSocialLinkedin} from "react-icons/ti"
 import './footer.scss'
 import logoFooter  from '../../Assets/image/logoFooter.png'
+import {ImArrowUpRight2} from "react-icons/im"
 
 const Footer=()=>{
 
@@ -12,6 +13,9 @@ const Footer=()=>{
       <div className="footer-top">
         <p className="subscribe-label">Legal Knowledge as a Tool for Social Change</p>
         <input className="subscribe-input" type="text" placeholder="Enter Email Address"/>
+         <button className='subscribe-button'>Subscribe <ImArrowUpRight2 className='icon'/></button>
+          
+    
       </div>
 
       <div className="footer-bottom">
