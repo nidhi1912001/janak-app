@@ -1,22 +1,31 @@
 @use "src/App";
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ethos+Nova:ital,wght@0,100;0,200;0,300;0,600;1,400&display=swap");
+@font-face {
+  font-family: 'Ethos Nova';
+  src: url('https://example.com/path_to_your_font_file.woff2') format('woff2'), /* Modern Browsers */
+  url('https://example.com/path_to_your_font_file.woff') format('woff'); /* Legacy Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
 .partners-main{
   display: grid;
-.partners-container {
+  margin: 50px 0px;
+.partners-top {
   background: rgba(231, 243, 250, 0.2);
   padding: 50px 190px;
   display: grid;
   gap: 25px;
 
-  .partners-top {
+  .partners-label {
     display: grid;
     gap: 10px;
 
-    .heading {
+    .partners-top-heading {
       margin: auto;
       @include App.page-heading;
     }
-    p {
+    .partners-top-content {
       font-family: Poppins;
       font-weight: 600;
       font-size: 55px;
@@ -37,7 +46,7 @@
     padding: 30px 70px;
 
 
-    img {
+    .partners-details-img {
       width: 300px;
       height: 137px;
     }
@@ -45,7 +54,7 @@
         border-left: 1px solid #D1D1D1;
 
     }
-    p {
+    .partners-details-content {
       font-family: Ethos Nova;
       font-size: 24px;
       font-weight: 500;
@@ -90,7 +99,7 @@
     gap: 25px;
 
 
-    .label {
+    .partner-label {
       border: 1px solid rgba(255, 255, 255, 0.3);
       padding: 0px 15px;
       border-radius: 5px;
@@ -105,7 +114,7 @@
 
     }
 
-    .heading {
+    .partner-heading {
       font-size: 55px;
       font-family: Poppins;
       font-weight: 700;
@@ -120,12 +129,13 @@
     }
 
     .bottom-content {
-      font-family: Ethos Nova;
-      font-size: 20px;
+      font-family: Poppins;
       font-weight: 500;
-      line-height: 30px;
+      font-size: 22px;
+      line-height: 33px;
       text-align: left;
       color: rgba(255, 255, 255, 0.75);
+      //letter-spacing: 1px;
 
     }
     .joinWaitlist{

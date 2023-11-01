@@ -1,18 +1,17 @@
 @use "src/App";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;1,400&display=swap');
 
-.products-container{
-  margin: 50px 122px;
+.products{
   display: grid;
   gap: 40px;
-  .products-container-top{
+  .products-top{
     text-align: center;
-    .heading{
+    .products-top-heading{
      margin: auto;
       @include App.page-heading
 
     }
-    p{
+    .products-top-content{
       color: #0E0E18;
       font-family: Poppins;
       font-size: 55px;
@@ -24,7 +23,7 @@
       }
     }
   }
-  .products-container-bottom{
+  .products-bottom{
     display: grid;
     grid-template-columns: auto auto;
     gap: 35px;

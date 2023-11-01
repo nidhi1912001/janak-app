@@ -1,18 +1,33 @@
+@import "../../App";
+.footer{
+  .footer-top{
+    background-color: $blue-color;
+    display: flex;
+    //grid-template-columns: 50% 50%;
+    padding: 100px 144px;
+   align-items: center;
 
 
-div {
-  h1 {
+    .subscribe-label{
+      font-family: Poppins;
+      font-size: 46px;
+      font-weight: 700;
+      line-height: 75px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: white;
 
+    }
+
+    .subscribe-input{
+      width: 635px;
+      border-radius: 34px;
+      height: 64px;
+
+      ::placeholder{
+        color: #939393;
+      }
+    }
   }
-  p {
 
-  }
-  .icon {
-      background-color: #f4bf19;
-      border-radius: 20px;
-      padding: 5px;
-      margin: 2px;
-
-
-  }
 }

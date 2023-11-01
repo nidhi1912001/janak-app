@@ -9,53 +9,57 @@ import Partners from "../Partners/Partners";
 import Products from "../Products/Products";
 import News from "../News/News";
 import Container from "../../Component/Container/Container";
+import Footer from "../../Component/Footer/Footer";
 
 
 const Home = () => {
-  const [currentText, setCurrentText] = useState("");
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [ currentText, setCurrentText ] = useState( "" );
+  const [ currentIndex, setCurrentIndex ] = useState( 0 );
   let text = "Search Something here.....";
   let delay = 100;
   let infinite = true;
 
-  useEffect(() => {
+  useEffect( () => {
     let timeout;
-    if (currentIndex < text.length) {
-      timeout = setTimeout(() => {
-        setCurrentText((prevText) => prevText + text[currentIndex]);
-        setCurrentIndex((prevIndex) => prevIndex + 1);
-      }, delay);
+    if ( currentIndex < text.length ) {
+      timeout = setTimeout( () => {
+        setCurrentText( ( prevText ) => prevText + text[currentIndex] );
+        setCurrentIndex( ( prevIndex ) => prevIndex + 1 );
+      }, delay );
     }
 
-    return () => clearTimeout(timeout);
-  }, [currentIndex, delay, text]);
+    return () => clearTimeout( timeout );
+  }, [ currentIndex, delay, text ] );
   return (
-    
-      <div id="homeMain">
-        <div id="home1">
-          <Container>
-            <h1>
-              Revolutionizing{" "}
-              <span>
+    <>
+
+    <div id="homeMain">
+
+      <div className="home-top">
+        <Container>
+          <h1 className="home-heading">
+            Revolutionizing{" "}
+            <span>
                 Legal Expert<em>i</em>se
               </span>
-            </h1>
-            <p>Where Legal Prowess Meets Technological Brilliance</p>
-          </Container>
-        </div>
+          </h1>
+          <p>Where Legal Prowess Meets Technological Brilliance</p>
+        </Container>
+      </div>
 
-        <div id="home2">
-          <div id="inputText">
-            <h3>What content do you want?</h3>
-            <div className="search">
-              <input type="text" placeholder={`${currentText}` + "|"} />
-              <IoSearchOutline className="icon" />
+      <Container>
+        <div className="home-bottom">
+          <div className="home-bottom-content">
+            <h3 className="home-bottom-heading">What content do you want?</h3>
+            <div className="home-search">
+              <input className="home-search-input" type="text" placeholder={`${currentText}` + "|"}/>
+              <IoSearchOutline className="icon"/>
             </div>
           </div>
 
           <div id="search-cartoon">
             <div>
-              <img src={cartoon} alt="cartoon" />
+              <img src={cartoon} alt="cartoon"/>
             </div>
             <div id="text">
               <p>
@@ -73,12 +77,17 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </Container>
 
-        <AboutJanak />
-        <Products />
-        <Partners />
-        <News />
-      </div>
+    </div>
+
+      <AboutJanak/>
+      <Products/>
+      <Partners/>
+      <News/>
+      <Footer/>
+    </>
+
 
   );
 };

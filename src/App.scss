@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;1,400&display=swap');
+
+$yellow-color: rgba(243, 191, 25, 1);
+$blue-color:rgba(26, 135, 201, 1);
+
 @mixin page-heading{
   border-radius: 5px;
   border: 1px solid rgba(243, 191, 25, 0.30);
@@ -11,4 +15,11 @@
   width: max-content;
   padding: 0px 18px;
   line-height: 26.85px;
+}
+.icon{
+   background-color: $yellow-color;
+   border-radius: 20px;
+   color: white;
+   font-size: 30px;
+
 }

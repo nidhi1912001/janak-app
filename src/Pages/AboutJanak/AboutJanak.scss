@@ -1,28 +1,30 @@
-
 @use "src/App";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;1,400&display=swap');
-.about{
-   display: grid;
-   grid-template-columns: 55% 45%;
-   //margin: 0px 122px;
-  padding: 50px 122px;
-  background-color: rgba(231, 243, 250, 0.2);
 
-    .about-left{
+.about {
+  background-color: rgba(231, 243, 250, 0.2);
+  margin: 50px 0px;
+  padding: 50px 0px;
+  .container {
+    display: grid;
+    grid-template-columns: 55% 45%;
+
+
+    .about-left {
       position: relative;
 
-      img{
+      img {
         width: 600px;
         height: 560px;
         margin: 20px 0px;
 
       }
 
-      .box{
+      .box {
         position: absolute;
         top: 50px;
-        right: 88px;
+        right: 70px;
         border-radius: 10px;
         background: #1A87C9;
         display: flex;
@@ -30,20 +32,22 @@
         padding: 0px 20px;
         width: 280px;
 
-        .ten{
+        .ten {
 
           color: #FFF;
           font-family: Poppins;
           font-size: 50px;
           font-style: normal;
           font-weight: 600;
-          sup{
+
+          sup {
             font-size: 25px;
-            font-weight:700
+            font-weight: 700
           }
 
         }
-        .experience{
+
+        .experience {
           margin: auto;
           color: #FFF;
           font-family: Poppins;
@@ -54,20 +58,23 @@
         }
       }
     }
-    .about-right{
-             display: flex;
-             flex-direction: column;
-             gap: 25px;
-      .heading{
+
+    .about-right {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+
+      .about-right-heading {
         @include App.page-heading
-        }
-      .container {
+      }
+
+      .about-right-container {
 
         display: grid;
         gap: 40px;
 
 
-        .container-start {
+        .about-container-start {
           color: #0E0E18;
           font-family: Poppins;
           font-size: 50px;
@@ -79,32 +86,38 @@
 
           }
         }
-        .container-middle{
+
+        .about-container-middle {
           color: #5F5F5F;
           font-family: Ethos Nova;
           font-size: 20px;
           font-style: normal;
           font-weight: 500;
-          line-height:30px;
+          line-height: 30px;
         }
-        .container-end{
+
+        .about-container-end {
           display: grid;
           gap: 10px;
-          h5 {
+
+          .about-container-heading {
             color: #1A87C9;
             font-family: Ethos Nova;
             font-size: 25px;
             font-style: normal;
             font-weight: 800
           }
-          .end-detail {
+
+          .about-container-detail{
             display: flex;
             gap: 12px;
-            span{
+
+            span {
               width: 12px;
               background: #F3BF19;
             }
-            p {
+
+            .about-end-content {
               color: var(--accent-100, #0E0E18);
               font-family: Ethos Nova;
               font-size: 23px;
@@ -115,4 +128,5 @@
         }
       }
     }
+  }
 }

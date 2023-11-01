@@ -2,17 +2,18 @@
 
 .news{
   padding: 50px 0px;
+
   .news-top{
     margin: auto;
     display: grid;
     gap:10px;
 
-    .heading{
+    .news-heading{
       margin: auto;
       @include App.page-heading;
 
     }
-    p{
+    .news-content{
 
       font-family: Poppins;
       font-size: 55px;
@@ -29,8 +30,9 @@
     }
   }
   .news-bottom{
-    display: flex;
-    .news-bottom-card{
+    display: grid;
+    .news-card{
+      display: flex;
 
       .card-detail{
         font-family: Poppins;
@@ -41,6 +43,30 @@
         text-align: left;
 
       }
+    }
+    .viewAll{
+      background-color: #1a87c8;
+      border-radius: 68px;
+      width: max-content;
+      display: flex;
+      gap: 20px;
+      padding: 8px 20px;
+
+      .viewAll-news{
+        font-family: Ethos Nova;
+        font-size: 18px;
+        //font-weight: 600;
+        line-height: 23.76px;
+        align-self: center;
+        color: rgba(255, 255, 255, 1) ;
+
+      }
+      .icon{
+        border-radius: 30px;
+        font-size: 35px;
+
+      }
+
     }
   }
 }

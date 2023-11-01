@@ -6,6 +6,7 @@ import lawyer from  "../../Assets/image/Lawyer.svg"
 import  chipSvg from "../../Assets/image/Chip.svg"
 import folderSvg from "../../Assets/image/Folder.svg"
 import groupSvg from "../../Assets/image/Group.svg"
+import Container from "../../Component/Container/Container";
 
 const Products=()=>{
 
@@ -25,13 +26,14 @@ const Products=()=>{
   ]
 
   return(
-    <div className="products-container">
-        <div className="products-container-top">
-          <div className="heading"> Our Products </div>
-          <p> The Janak Knowledge <span> Engine </span> </p>
+    <Container>
+    <div className="products">
+        <div className="products-top">
+          <div className="products-top-heading"> Our Products </div>
+          <p className="products-top-content"> The Janak Knowledge <span> Engine </span> </p>
         </div>
 
-        <div className="products-container-bottom">
+        <div className="products-bottom">
           {products.map((product)=>{
             return(
               <div className="singleProduct">
@@ -48,6 +50,7 @@ const Products=()=>{
 
 
     </div>
+    </Container>
 
   )
 }

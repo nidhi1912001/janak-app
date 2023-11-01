@@ -38,18 +38,18 @@ const Partners = () => {
   };
   return (
     <div className="partners-main">
-      <div className="partners-container">
-        <div className="partners-top">
-          <div className="heading"> Our Partners </div>
-          <p>
+      <div className="partners-top">
+        <div className="partners-label">
+          <div className="partners-top-heading"> Our Partners </div>
+          <p className="partners-top-content">
             Endorsed by Nvidia <span> Inception Program </span>
           </p>
         </div>
 
         <div className="partners-details">
-          <img src={selectData.img} />
+          <img className="partners-details-img" src={selectData.img} />
           <div className="border"></div>
-          <p>{selectData.content}</p>
+          <p className="partners-details-content">{selectData.content}</p>
         </div>
 
         <div className="carousel">
@@ -60,8 +60,8 @@ const Partners = () => {
       </div>
       <div className="partners-bottom">
         <div className="partner-bottom-content">
-          <label className="label">Coming Soon</label>
-          <p className="heading">
+          <label className="partner-label">Coming Soon</label>
+          <p className="partner-heading">
             Stay Tuned for <span> Janak.AI v1.0 </span>
           </p>
           <p className="bottom-content">

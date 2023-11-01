@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,600;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;1,400&display=swap');
 #homeMain {
+  display: grid;
+  gap: 50px;
 
-  #home1 {
+  .home-top {
     background-blend-mode: lighten;
     background-image: url('../../Assets/image/main-banner.png');
-    //object-fit:none;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 90%;
     background-color: #040d2c;
 
 
-    div {
+    .container {
       height: 500px;
-      margin: 0px 122px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -23,7 +23,7 @@
 
 
 
-      h1 {
+      .home-heading {
         color: white;
         margin: 0;
         font-family: Poppins;
@@ -57,12 +57,12 @@
     }
 
   }
-  #home2 {
-  margin: 50px 122px;
+  .home-bottom {
+
   display: grid;
   gap: 30px;
 
-   #inputText {
+   .home-bottom-content {
     background-color: #1a87c8;
     border-radius: 15px;
     display: flex;
@@ -70,7 +70,7 @@
     gap: 30px;
     padding:60px 120px;
 
-    h3 {
+    .home-bottom-heading {
       margin-top: 0;
       color: white;
       font-size: 30px;
@@ -79,10 +79,10 @@
       text-align: center;
     }
 
-    .search {
+    .home-search {
       position: relative;
 
-      input {
+      .home-search-input {
         width: 100%;
         border-radius: 40px;
         border: none;
@@ -104,7 +104,6 @@
         right: 17px;
         top: 5px;
         font-size: 58px;
-        color: white;
         border-radius: 40px;
         padding: 12px;
 
@@ -128,9 +127,6 @@
       gap: 20px;
 
 
-
-      //height: 200px;
-      //overflow: auto;
     }
   }
 }
