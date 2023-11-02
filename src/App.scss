@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,400&display=swap');
 
 $yellow-color: rgba(243, 191, 25, 1);
 $blue-color:rgba(26, 135, 201, 1);
@@ -17,9 +17,41 @@ $blue-color:rgba(26, 135, 201, 1);
   line-height: 26.85px;
 }
 .icon{
-   background-color: $yellow-color;
-   border-radius: 20px;
-   color: white;
-   font-size: 30px;
+  // background-color: $yellow-color;
+  // //border-radius: 20px;
+  // //color: white;
+  // //font-size: 30px;
+  // //width: 36px;
+  // //height: 36px;
+  //
+  //border-radius: 50%;
+  ////border: 2px solid red;
+  //width: 35px;
+  //height: 35px;
+  //font-size: 20px;
+  //
 
+  background:$yellow-color;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  //line-height: 100px;
+  vertical-align: middle;
+  padding: 2px;
+
+
+}
+
+.footer-icon{
+
+}
+
+.footer-bottom-heading{
+  color: #1A87C9;
+  font-family: Poppins;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px
 }

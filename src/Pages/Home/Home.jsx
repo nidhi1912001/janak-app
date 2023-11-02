@@ -39,8 +39,8 @@ const Home = () => {
         <Container>
           <h1 className="home-heading">
             Revolutionizing{" "}
-            <span>
-                Legal Expert<em>i</em>se
+            <span className="home-heading-span">
+                Legal Expert<span className="specific-i">i</span>se
               </span>
           </h1>
           <p>Where Legal Prowess Meets Technological Brilliance</p>

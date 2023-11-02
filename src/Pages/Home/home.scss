@@ -30,20 +30,21 @@
         font-weight: 600;
         font-size: 71px;
 
-        span {
+        .home-heading-span {
           color: #1a87c8;
           display: block;
         }
 
-        em {
+        .specific-i {
           color: #f4bf19;
           position: relative;
         }
 
-        em:before {
+        .specific-i:before {
           content: "ı";
           position: absolute;
           color: #1a87c8;
+          font-style: normal;
         }
       }
 
