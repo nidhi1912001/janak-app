@@ -2,6 +2,8 @@
 
 .news{
   padding: 50px 0px;
+  display: grid;
+  gap: 40px;
 
   .news-top{
     margin: auto;
@@ -29,44 +31,85 @@
 
     }
   }
-  .news-bottom{
-    display: grid;
-    .news-card{
-      display: flex;
 
-      .card-detail{
-        font-family: Poppins;
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 35px;
-        letter-spacing: 0em;
-        text-align: left;
+
+    .news-bottom {
+      display: grid;
+      gap: 40px;
+
+      .news-card {
+        display: flex;
+
+        .vector {
+          width: 58px;
+          height: 62px;
+          margin: auto;
+        }
+
+        .cards {
+          display: flex;
+          gap: 30px;
+
+
+          .card {
+            border: 1px solid #ECECEC;
+            background: #FAFDFE;
+            padding: 38px 24px;
+            width: 400px;
+            display: grid;
+            gap: 20px;
+
+            .card-date {
+              font-family: Poppins;
+              color: #1A87C9;
+              display: flex;
+              gap: 10px;
+            }
+
+            .card-detail {
+              font-family: Poppins;
+              font-size: 20px;
+              font-weight: 700;
+              letter-spacing: 0em;
+              text-align: left;
+
+            }
+
+            .card-img {
+              width: 100%;
+            }
+          }
+
+
+
 
       }
+
+
     }
-    .viewAll{
-      background-color: #1a87c8;
-      border-radius: 68px;
-      width: max-content;
-      display: flex;
-      gap: 20px;
-      padding: 8px 20px;
 
-      .viewAll-news{
-        font-family: Ethos Nova;
-        font-size: 18px;
-        //font-weight: 600;
-        line-height: 23.76px;
-        align-self: center;
-        color: rgba(255, 255, 255, 1) ;
+      .viewAll {
+        background-color: #1a87c8;
+        border-radius: 68px;
+        width: max-content;
+        display: flex;
+        gap: 20px;
+        padding: 8px 20px;
+        margin: auto;
+
+        .viewAll-news {
+          font-family: Poppins;
+          font-size: 18px;
+          line-height: 23.76px;
+          align-self: center;
+          color: rgba(255, 255, 255, 1);
+
+        }
+
+        .icon {
+          color: white;
+        }
 
       }
-      .icon{
-        border-radius: 30px;
-        font-size: 35px;
-
-      }
-
-    }
   }
 }

@@ -89,14 +89,14 @@
   .partner-bottom-content {
     text-align: left;
     margin-left: auto;
-    padding: 0px 85px;
+    //padding: 0px 85px;
     max-width: 50%;
     height: 725px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 25px;
+    gap: 20px;
 
 
     .partner-label {
@@ -130,7 +130,7 @@
 
     .bottom-content {
       font-family: Poppins;
-      font-weight: 500;
+      font-weight: 300;
       font-size: 22px;
       line-height: 33px;
       text-align: left;

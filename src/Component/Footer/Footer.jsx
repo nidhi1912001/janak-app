@@ -4,11 +4,12 @@ import { TiSocialFacebook, TiSocialTwitter, TiSocialLinkedin } from "react-icons
 import './footer.scss'
 import logoFooter from '../../Assets/image/logoFooter.png'
 import { ImArrowUpRight2 } from "react-icons/im"
-import { FiHome } from "react-icons/fi"
+import { BiHomeAlt } from "react-icons/bi"
 import { LuMail } from "react-icons/lu"
 import Container from "../Container/Container";
 import liveChat from "../../Assets/image/Live chat.png"
 import home from "../../Assets/image/fi-rr-home.png"
+import {AiFillHome} from "react-icons/ai"
 
 
 const Footer = () => {
@@ -26,22 +27,29 @@ const Footer = () => {
         <Container>
           <div className="footer-bottom-top">
             <div className="footer-bottom-colA">
-              <img className="footer-logo" src={logoFooter}/>
-              <p className="colA-contain">Janak learns from each interaction, refining its knowledge and
-                enhancing its ability to assist users with their legal queries.</p>
-              <div className="socialMedia">
-                <TiSocialFacebook className="icon"/>
-                <TiSocialTwitter className="icon"/>
-                <SlSocialInstagram className="icon"/>
-                <TiSocialLinkedin className="icon"/>
-              </div>
+
+                  <div className="colA-info">
+                        <img className="footer-logo" src={logoFooter}/>
+                        <p className="colA-contain">Janak learns from each interaction, refining its knowledge and
+                          enhancing its ability to assist users with their legal queries.</p>
+                        <div className="socialMedia">
+                          <TiSocialFacebook className="icon"/>
+                          <TiSocialTwitter className="icon"/>
+                          <TiSocialLinkedin className="icon"/>
+                          <SlSocialInstagram className="icon"/>
+                        </div>
+                  </div>
+
+                  <div className="colA-border"></div>
             </div>
 
-            <div className="footer-bottom-colB"></div>
-            <div className="footer-bottom-colC">
+            <div className="footer-bottom-colB">
+
+            {/*<div className="footer-bottom-colB"></div>*/}
+            <div className="colB-left">
 
               <h3 className="footer-bottom-heading">Quick Links</h3>
-              <div className="colC-section">
+              <div className="colB-section">
                 <a href="#">Home</a>
                 <a href="#">About Us</a>
                 <a href="#">Register</a>
@@ -50,12 +58,13 @@ const Footer = () => {
 
             </div>
 
-            <div className="footer-bottom-colD">
+            <div className="colB-right">
               <h3 className="footer-bottom-heading">Contact</h3>
               <div className="contact-address">
-                <FiHome className="icon"/>
-
-                <p className="address-details">336 Smith Street, #05-303, New Bridge Centre,Singapore (050336)
+                <BiHomeAlt className="icon"/>
+                <p className="address-details">336 Smith Street, #05-303,<br/>
+                  New Bridge Centre,<br/>
+                  Singapore (050336)
                 </p>
               </div>
               <div className="contact-address">
@@ -63,6 +72,7 @@ const Footer = () => {
                 <p className="address-details">info@janak.ai</p>
 
               </div>
+            </div>
 
 
 

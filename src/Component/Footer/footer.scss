@@ -1,5 +1,6 @@
 @import "../../App.scss";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0&display=swap');
+
 .footer {
   .footer-top {
     background-color: $blue-color;
@@ -23,8 +24,9 @@
       border-radius: 34px;
       height: 64px;
       border: none;
-      
+
     }
+
     ::placeholder {
       color: #939393;
       font-size: 16px;
@@ -48,20 +50,16 @@
       position: absolute;
       right: 160px;
       letter-spacing: 1px;
-      
-      
+
 
       .icon {
-        font-size: 40px;
         background-color: $blue-color;
-        padding: 8px;
       }
     }
   }
 
   .footer-bottom {
     background-image: radial-gradient(circle, rgba(25, 46, 107, 1), rgba(9, 20, 55, 1));
-    //height: 548px;
     padding: 112px 0px;
 
 
@@ -71,40 +69,58 @@
 
       .footer-bottom-top {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: 45% 55%;
 
         .footer-bottom-colA {
 
-          display: grid;
-          gap: 25px;
+          display: flex;
 
-          .footer-logo {
-            width: 200px;
+          .colA-info {
+            display: grid;
+            gap: 25px;
+
+
+            .footer-logo {
+              width: 200px;
+            }
+
+            .colA-contain {
+              font-family: Poppins;
+              font-size: 18px;
+              line-height: 28px;
+              letter-spacing: 1px;
+              text-align: left;
+              color: rgba(255, 255, 255, 1);
+              font-weight: 200;
+
+            }
+
+            .socialMedia {
+              display: flex;
+              gap: 20px;
+            }
           }
 
-          .colA-contain {
-            font-family: Poppins;
-            font-size: 14px;
-            line-height: 28px;
-            letter-spacing: 1px;
-            text-align: left;
-            color: rgba(255, 255, 255, 1);
-            font-weight: 200;
-
+          .colA-border {
+            border-right: 1px solid rgba(255, 255, 255, 0.13);
+            margin: 0px 70px;
           }
+
 
         }
 
         .footer-bottom-colB {
-          border-left: 1px solid rgba(255, 255, 255, 0.13);
-          transform: translate(60%);
+          display: flex;
+          margin-left: 50px;
+          justify-content: space-between;
 
         }
 
-        .footer-bottom-colC {
+        .colB-left {
           display: grid;
 
-          .colC-section {
+
+          .colB-section {
             display: grid;
             gap: 10px;
 
@@ -115,20 +131,20 @@
               font-size: 18px;
               font-weight: 200;
               text-decoration: none;
-              line-height: 150%; /* 30px */
+              line-height: 28px;
+              text-align: left;
             }
 
           }
         }
 
-        .footer-bottom-colD {
+        .colB-right {
           display: grid;
           gap: 10px;
 
           .contact-address {
             display: flex;
             gap: 20px;
-
 
 
             .address-details {
@@ -148,15 +164,17 @@
       .footer-bottom-bottom {
 
         display: grid;
-        .livechat{
+
+        .livechat {
           display: flex;
 
-           .end-border{
-             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-             width: 100%;
-             margin: auto;
-           }
-          .liveChat-img{
+          .end-border {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            width: 100%;
+            margin: auto;
+          }
+
+          .liveChat-img {
             border-radius: 50px;
             padding: 15px;
             background-color: $blue-color;
@@ -167,7 +185,7 @@
 
         }
 
-        .copyright{
+        .copyright {
           text-align: center;
           color: var(--accent-300, #CFCFD1);
           font-family: Poppins;

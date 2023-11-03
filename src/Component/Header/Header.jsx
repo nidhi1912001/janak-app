@@ -12,7 +12,7 @@ import Container from '../Container/Container';
 const Header=()=>{
 
   const navigate=useNavigate();
-  console.log(navigate);
+  console.log(window.screen.width,"widthhhh");
 return(
   <Container>
   <div id="main">

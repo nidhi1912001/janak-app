@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import partner from "../../Assets/image/partner.png";
 import joinWaitlist from "../../Assets/image/join-waitlist.png";
 import "./partners.scss";
+import Container from "../../Component/Container/Container";
 
 const Partners = () => {
   const carouselSlidesData = [
@@ -59,6 +60,9 @@ const Partners = () => {
         </div>
       </div>
       <div className="partners-bottom">
+
+        <Container>
+
         <div className="partner-bottom-content">
           <label className="partner-label">Coming Soon</label>
           <p className="partner-heading">
@@ -74,6 +78,7 @@ const Partners = () => {
           </p>
           <img className="joinWaitlist"  src={joinWaitlist} />
         </div>
+        </Container>
       </div>
     </div>
   );
