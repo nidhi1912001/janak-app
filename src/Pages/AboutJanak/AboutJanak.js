@@ -3,9 +3,9 @@ import "./AboutJanak.scss"
 import employee from "../../Assets/image/employees-brainstorming.png"
 import Container from "../../Component/Container/Container";
 
-const AboutJanak=()=>{
+const AboutJanak=React.forwardRef((props, ref)  =>{
   return(
-    <div className="about">
+    <div className="about" ref={ref}>
       <Container>
          <div className="about-left">
            <img src={employee}  alt="employee"/>
@@ -41,4 +41,5 @@ const AboutJanak=()=>{
 
   )
 }
+)
 export default AboutJanak

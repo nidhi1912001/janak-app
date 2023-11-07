@@ -9,7 +9,7 @@ import vectorLeft from "../../Assets/image/vector-left.png"
 import vectorRight from "../../Assets/image/vector-right.png"
 import Container from "../../Component/Container/Container";
 
-const News = () => {
+const News = React.forwardRef((props, ref)  => {
   const newsList = [ {
     id: 1, icon: <SlCalender/>, date: "5th January,2023", detail: "111Three Ways Leaders Should\n" +
       "Pursue Breakthrough Innovation\n" +
@@ -53,22 +53,18 @@ const News = () => {
 
   const handleLeft=()=>{
     setCurrentImage((currentImage - 1 + newsList.length) % newsList.length);
-    console.log(currentImage);
-    
+
   }
 
 
   const handleRight=()=>{
-    console.log(newsList.length,"newlistttt");
     setCurrentImage((currentImage + 1) % newsList.length);
-    console.log(currentImage,"right");
-
   }
 
   
 
   return (
-    <div className="news">
+    <div className="news" ref={ref}>
       <div className="news-top">
         <div className="news-heading">Latest News</div>
         <p className="news-content"> Find the top <span> Insights & News </span></p>
@@ -91,19 +87,7 @@ const News = () => {
                 </card>
           ))
 
-
-
-            /* {newsList.map( (n ) => {
-              return (
-                <card className="card">
-                  <p className="card-date">{n.icon}{n.date}</p>
-                  <p className="card-detail">{n.detail}</p>
-                  <img className="card-img" src={n.img}/>
-                </card>
-               )
-            
-
-            } )} */}
+            }
 
           </div>
 
@@ -121,4 +105,5 @@ const News = () => {
     </div>
   )
 }
+)
 export default News

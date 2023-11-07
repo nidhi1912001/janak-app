@@ -3,21 +3,16 @@ import "./home.scss";
 import { IoSearchOutline } from "react-icons/io5";
 import { useState, useEffect } from "react";
 import cartoon from "../../Assets/image/search-cartoon.png";
-import ReactTyped from "react-typed";
-import AboutJanak from "../AboutJanak/AboutJanak";
-import Partners from "../Partners/Partners";
-import Products from "../Products/Products";
-import News from "../News/News";
 import Container from "../../Component/Container/Container";
-import Footer from "../../Component/Footer/Footer";
 
 
-const Home = () => {
+
+const Home = React.forwardRef((props, ref) => {
   const [ currentText, setCurrentText ] = useState( "" );
   const [ currentIndex, setCurrentIndex ] = useState( 0 );
   let text = "Search Something here.....";
   let delay = 100;
-  let infinite = true;
+
 
   useEffect( () => {
     let timeout;
@@ -33,7 +28,7 @@ const Home = () => {
   return (
     <>
 
-    <div id="homeMain">
+    <div id="homeMain" ref={ref}>
 
       <div className="home-top">
         <Container>
@@ -81,15 +76,12 @@ const Home = () => {
 
     </div>
 
-      <AboutJanak/>
-      <Products/>
-      <Partners/>
-      <News/>
-      <Footer/>
+
     </>
 
 
-  );
-};
+  )
+}
+)
 
 export default Home;

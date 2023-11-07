@@ -1,0 +1,199 @@
+@import "../../App.scss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0&display=swap');
+
+.footer {
+  .footer-top {
+    background-color: $blue-color;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 100px 144px;
+    align-items: center;
+    position: relative;
+
+    .subscribe-label {
+      font-family: Poppins;
+      font-size: 46px;
+      font-weight: 700;
+      line-height: 72px;
+      color: white;
+      padding-right: 50px;
+    }
+
+    .subscribe-input {
+      width: 635px;
+      border-radius: 34px;
+      height: 64px;
+      border: none;
+
+    }
+
+    ::placeholder {
+      color: #939393;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 29px;
+      padding-left: 30px;
+    }
+
+    .subscribe-button {
+      background-color: $yellow-color;
+      width: max-content;
+      padding: 8px 20px;
+      border-radius: 72px;
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      font-family: Ethos Nova;
+      font-size: 20px;
+      font-weight: 600;
+      border: none;
+      position: absolute;
+      right: 160px;
+      letter-spacing: 1px;
+
+
+      .icon {
+        background-color: $blue-color;
+      }
+    }
+  }
+
+  .footer-bottom {
+    background-image: radial-gradient(circle, rgba(25, 46, 107, 1), rgba(9, 20, 55, 1));
+    padding: 112px 0px;
+
+
+    .container {
+      display: grid;
+      gap: 60px;
+
+      .footer-bottom-top {
+        display: grid;
+        grid-template-columns: 45% 55%;
+
+        .footer-bottom-colA {
+
+          display: flex;
+
+          .colA-info {
+            display: grid;
+            gap: 25px;
+
+
+            .footer-logo {
+              width: 200px;
+            }
+
+            .colA-contain {
+              font-family: Poppins;
+              font-size: 18px;
+              line-height: 28px;
+              letter-spacing: 1px;
+              text-align: left;
+              color: rgba(255, 255, 255, 1);
+              font-weight: 200;
+
+            }
+
+            .socialMedia {
+              display: flex;
+              gap: 20px;
+            }
+          }
+
+          .colA-border {
+            border-right: 1px solid rgba(255, 255, 255, 0.13);
+            margin: 0px 70px;
+          }
+
+
+        }
+
+        .footer-bottom-colB {
+          display: flex;
+          margin-left: 50px;
+          justify-content: space-between;
+
+        }
+
+        .colB-left {
+          display: grid;
+
+
+          .colB-section {
+            display: grid;
+            gap: 10px;
+
+            a {
+              display: block;
+              color: var(--accent-400, #FFF);
+              font-family: Poppins;
+              font-size: 18px;
+              font-weight: 200;
+              text-decoration: none;
+              line-height: 28px;
+              text-align: left;
+            }
+
+          }
+        }
+
+        .colB-right {
+          display: grid;
+          gap: 10px;
+
+          .contact-address {
+            display: flex;
+            gap: 20px;
+
+
+            .address-details {
+              color: var(--accent-400, #FFF);
+              font-family: Poppins;
+              font-size: 18px;
+              font-style: normal;
+              line-height: 28px;
+              font-weight: 200;
+              letter-spacing: 1px;
+            }
+          }
+        }
+
+      }
+
+      .footer-bottom-bottom {
+
+        display: grid;
+
+        .livechat {
+          display: flex;
+
+          .end-border {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            width: 100%;
+            margin: auto;
+          }
+
+          .liveChat-img {
+            border-radius: 50px;
+            padding: 15px;
+            background-color: $blue-color;
+            width: 60px;
+
+          }
+
+
+        }
+
+        .copyright {
+          text-align: center;
+          color: var(--accent-300, #CFCFD1);
+          font-family: Poppins;
+          font-size: 15px;
+          font-weight: 200;
+          line-height: 22px
+        }
+      }
+    }
+  }
+}

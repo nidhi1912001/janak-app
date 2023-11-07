@@ -4,7 +4,7 @@ import joinWaitlist from "../../Assets/image/join-waitlist.png";
 import "./partners.scss";
 import Container from "../../Component/Container/Container";
 
-const Partners = () => {
+const Partners = React.forwardRef((props, ref)  => {
   const carouselSlidesData = [
     {
       id: 1,
@@ -38,7 +38,7 @@ const Partners = () => {
     setSelectData({ ...selectData, img: ele.img, content: ele.content });
   };
   return (
-    <div className="partners-main">
+    <div className="partners-main" ref={ref}>
       <div className="partners-top">
         <div className="partners-label">
           <div className="partners-top-heading"> Our Partners </div>
@@ -81,6 +81,7 @@ const Partners = () => {
         </Container>
       </div>
     </div>
-  );
-};
+  )
+}
+)
 export default Partners;
