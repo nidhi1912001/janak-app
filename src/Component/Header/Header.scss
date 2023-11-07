@@ -1,23 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;1,400&display=swap');
-#main{
+.main{
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 90px;
   padding: 0px 30px;
   
-  #pages{
+  .pages{
     display: flex;
     gap: 50px;
-    a{
+    .page-btn{
       text-decoration: none;
       color: rgba(14, 14, 24, 1);
       font-family: Poppins;
       font-weight: 500;
       font-size: 18px;
       letter-spacing: 1px;
+      background: none;
+      margin: 0;
+      padding: 0;
+      border: none;
+      
     }
-    a:focus
+    .page-btn:focus
     {
       text-decoration: underline;
       text-decoration-color: #f4bf19;

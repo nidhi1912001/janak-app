@@ -1,4 +1,4 @@
-@use "src/App";
+@use "../../styles/global.scss";
 
 .news{
   padding: 50px 0px;
@@ -12,7 +12,7 @@
 
     .news-heading{
       margin: auto;
-      @include App.page-heading;
+      @include global.page-heading;
 
     }
     .news-content{

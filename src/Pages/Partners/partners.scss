@@ -1,4 +1,4 @@
-@use "src/App";
+@use "../../styles/global.scss";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ethos+Nova:ital,wght@0,100;0,200;0,300;0,600;1,400&display=swap");
 @font-face {
@@ -23,7 +23,7 @@
 
     .partners-top-heading {
       margin: auto;
-      @include App.page-heading;
+      @include global.page-heading;
     }
     .partners-top-content {
       font-family: Poppins;

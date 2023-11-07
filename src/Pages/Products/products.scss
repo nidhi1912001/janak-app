@@ -1,4 +1,4 @@
-@use "src/App";
+@use "../../styles/global.scss";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;1,400&display=swap');
 
 .products{
@@ -8,7 +8,7 @@
     text-align: center;
     .products-top-heading{
      margin: auto;
-      @include App.page-heading
+      @include global.page-heading
 
     }
     .products-top-content{

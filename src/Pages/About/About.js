@@ -1,9 +1,9 @@
 import React from 'react'
-import "./AboutJanak.scss"
+import "./About.scss"
 import employee from "../../Assets/image/employees-brainstorming.png"
 import Container from "../../Component/Container/Container";
 
-const AboutJanak=React.forwardRef((props, ref)  =>{
+const About=React.forwardRef((props, ref)  =>{
   return(
     <div className="about" ref={ref}>
       <Container>
@@ -42,4 +42,4 @@ const AboutJanak=React.forwardRef((props, ref)  =>{
   )
 }
 )
-export default AboutJanak
+export default About

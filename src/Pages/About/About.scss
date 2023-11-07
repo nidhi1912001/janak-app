@@ -1,4 +1,6 @@
-@use "src/App";
+
+@use "/src/styles/global";
+@import  "../../styles/global.scss";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;1,400&display=swap');
 
@@ -65,7 +67,7 @@
       gap: 25px;
 
       .about-right-heading {
-        @include App.page-heading
+        @include global.page-heading
       }
 
       .about-right-container {
