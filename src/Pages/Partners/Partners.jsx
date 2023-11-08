@@ -55,7 +55,7 @@ const Partners = React.forwardRef((props, ref)  => {
 
         <div className="carousel">
           {carouselSlidesData.map((ele, id) => {
-            return <a onClick={() => handleClick(ele, id)} key={id}></a>;
+            return <a className="carousel-link" onClick={() => handleClick(ele, id)} key={id}></a>;
           })}
         </div>
       </div>

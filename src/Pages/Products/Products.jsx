@@ -54,7 +54,7 @@ const Products = React.forwardRef( ( props, ref ) => {
                     <p className="singleProduct-content-head">{product.head}</p>
                     <p className="singleProduct-content-detail">{product.content}</p>
                   </div>
-                  <img src={product.svg}/>
+                  <img className="svg" src={product.svg}/>
                 </div>
               )
             } )}

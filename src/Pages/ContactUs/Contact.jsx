@@ -15,21 +15,21 @@ import {AiFillHome} from "react-icons/ai"
 const Contact = React.forwardRef((props, ref)  => {
 
   return (
-    <div className="footer" ref={ref}>
+    <div className="contact" ref={ref}>
 
-      <div className="footer-top">
+      <div className="contact-top">
         <p className="subscribe-label">Legal Knowledge as a Tool for Social Change</p>
         <input className="subscribe-input" type="text" placeholder="Enter Email Address"/>
         <button className='subscribe-button'>Subscribe <ImArrowUpRight2 className='icon'/></button>
       </div>
 
-      <div className="footer-bottom">
+      <div className="contact-bottom">
         <Container>
-          <div className="footer-bottom-top">
-            <div className="footer-bottom-colA">
+          <div className="contact-bottom-top">
+            <div className="contact-bottom-colA">
 
               <div className="colA-info">
-                <img className="footer-logo" src={logoFooter}/>
+                <img className="contact-logo" src={logoFooter}/>
                 <p className="colA-contain">Janak learns from each interaction, refining its knowledge and
                   enhancing its ability to assist users with their legal queries.</p>
                 <div className="socialMedia">
@@ -43,12 +43,12 @@ const Contact = React.forwardRef((props, ref)  => {
               <div className="colA-border"></div>
             </div>
 
-            <div className="footer-bottom-colB">
+            <div className="contact-bottom-colB">
 
               {/*<div className="footer-bottom-colB"></div>*/}
               <div className="colB-left">
 
-                <h3 className="footer-bottom-heading">Quick Links</h3>
+                <h3 className="contact-bottom-heading">Quick Links</h3>
                 <div className="colB-section">
                   <a href="#">Home</a>
                   <a href="#">About Us</a>
@@ -59,7 +59,7 @@ const Contact = React.forwardRef((props, ref)  => {
               </div>
 
               <div className="colB-right">
-                <h3 className="footer-bottom-heading">Contact</h3>
+                <h3 className="contact-bottom-heading">Contact</h3>
                 <div className="contact-address">
                   <BiHomeAlt className="icon"/>
                   <p className="address-details">336 Smith Street, #05-303,<br/>

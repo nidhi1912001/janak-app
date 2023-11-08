@@ -3,6 +3,7 @@ import "./home.scss";
 import { IoSearchOutline } from "react-icons/io5";
 import { useState, useEffect } from "react";
 import cartoon from "../../Assets/image/search-cartoon.png";
+import joinWaitlist from "../../Assets/image/join-waitlist.png"
 import Container from "../../Component/Container/Container";
 
 
@@ -25,10 +26,12 @@ const Home = React.forwardRef((props, ref) => {
 
     return () => clearTimeout( timeout );
   }, [ currentIndex, delay, text ] );
+
+
+
   return (
     <>
-
-    <div id="homeMain" ref={ref}>
+      <div className="homeMain" ref={ref}>
 
       <div className="home-top">
         <Container>
@@ -38,7 +41,8 @@ const Home = React.forwardRef((props, ref) => {
                 Legal Expert<span className="specific-i">i</span>se
               </span>
           </h1>
-          <p>Where Legal Prowess Meets Technological Brilliance</p>
+          <p className="top-details">Where Legal Prowess Meets Technological Brilliance</p>
+          <img className="join-image" src={joinWaitlist}/>
         </Container>
       </div>
 
@@ -52,18 +56,18 @@ const Home = React.forwardRef((props, ref) => {
             </div>
           </div>
 
-          <div id="search-cartoon">
+          <div className="search-cartoon">
             <div>
               <img src={cartoon} alt="cartoon"/>
             </div>
-            <div id="text">
-              <p>
+            <div className="cartoon-text">
+              <p className="text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut
                 posuere erat. Aliquam rhoncus tortor eget magna placerat
                 condimentum. Fusce elementum condimentum sapien, ac convallis
                 ante pharetra ac.
               </p>
-              <p>
+              <p className="text">
                 Donec vel dignissim velit. Cras tempus tincidunt odio, id
                 pretium turpis pharetra quis. Duis orci arcu, sodales vel magna
                 et, tempor cursus erat. Integer posuere tempor lectus, sed

@@ -56,7 +56,6 @@ const News = React.forwardRef((props, ref)  => {
 
   }
 
-
   const handleRight=()=>{
     setCurrentImage((currentImage + 1) % newsList.length);
   }
@@ -72,8 +71,11 @@ const News = React.forwardRef((props, ref)  => {
 
       <div className="news-bottom">
         <div className="news-card">
-          <button className="vector-left" src={vectorLeft} onClick={handleLeft}>&lt;</button>
-          <button className="vector-right" src={vectorRight} onClick={handleRight}> &gt;</button>
+
+          <img className="vector-left" src={vectorLeft} onClick={handleLeft}/>
+          <img className="vector-right" src={vectorRight} onClick={handleRight}/>
+
+         <Container>
 
           <div className="cards">
 
@@ -90,12 +92,13 @@ const News = React.forwardRef((props, ref)  => {
             }
 
           </div>
+         </Container>
 
 
         </div>
 
         <div className="viewAll">
-          <p className="viewAll-news">View All News</p>
+          <button className="viewAll-news">View All News</button>
           <ImArrowUpRight2 className="icon"/>
         </div>
 

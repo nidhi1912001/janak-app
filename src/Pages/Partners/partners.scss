@@ -1,13 +1,6 @@
-@use "../../styles/global.scss";
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Ethos+Nova:ital,wght@0,100;0,200;0,300;0,600;1,400&display=swap");
-@font-face {
-  font-family: 'Ethos Nova';
-  src: url('https://example.com/path_to_your_font_file.woff2') format('woff2'), /* Modern Browsers */
-  url('https://example.com/path_to_your_font_file.woff') format('woff'); /* Legacy Browsers */
-  font-weight: normal;
-  font-style: normal;
-}
+@use "../../global";
+@import "../../global";
+
 .partners-main{
   display: grid;
   margin: 50px 0px;
@@ -26,13 +19,13 @@
       @include global.page-heading;
     }
     .partners-top-content {
-      font-family: Poppins;
+      font-family: $font-poppins;
       font-weight: 600;
       font-size: 55px;
       text-align: center;
 
       span {
-        color: #1a87c9;
+        color: $blue-color;
 
       }
     }
@@ -55,7 +48,7 @@
 
     }
     .partners-details-content {
-      font-family: Ethos Nova;
+      font-family:$font-ethos-nova;
       font-size: 24px;
       font-weight: 500;
       line-height: 33.6px;
@@ -67,82 +60,87 @@
     gap: 15px;
     justify-content: center;
     margin-top: 30px;
-   a {
+   .carousel-link {
      border: 1px solid rgba(231, 231, 231, 1);
      border-radius: 30px;
      width: 35px;
 
     }
-    a:hover {
-      border: 1px solid rgba(26, 135, 201, 1);
+    .carousel-link:hover {
+      border: 1px solid $blue-color;
     }
    }
 
 }
-.partners-bottom{
+
+
+.partners-bottom {
   background-image: url("../../Assets/image/coming-soon-banner.png");
   background-repeat: no-repeat;
   background-position: left;
   height: 730px;
 
-  }
-  .partner-bottom-content {
-    text-align: left;
-    margin-left: auto;
-    //padding: 0px 85px;
-    max-width: 50%;
-    height: 725px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
+  .container {
+    margin: 50px auto;
 
 
-    .partner-label {
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      padding: 0px 15px;
-      border-radius: 5px;
-      font-family: Poppins;
-      font-size: 24px;
-      font-weight: 400;
-      line-height: 29px;
+    .partner-bottom-content {
       text-align: left;
-      color: rgba(255, 255, 255, 1);
-      background-color: rgba(255, 255, 255, 0.3);
+      float: right;
+      max-width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 30px;
 
 
-    }
+      .partner-label {
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 0px 15px;
+        border-radius: 5px;
+        font-family: $font-poppins;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        text-align: left;
+        color: rgba(255, 255, 255, 1);
+        background-color: rgba(255, 255, 255, 0.3);
 
-    .partner-heading {
-      font-size: 55px;
-      font-family: Poppins;
-      font-weight: 700;
-      color: rgba(255, 255, 255, 1);
-      line-height: 60px;
 
-      span {
-        font-size: 55px;
-        display: block;
-        color: rgba(26, 135, 201, 1)
       }
+
+      .partner-heading {
+        font-size: 55px;
+        font-family: $font-poppins;
+        font-weight: 700;
+        color: rgba(255, 255, 255, 1);
+        line-height: 60px;
+
+        span {
+          font-size: 55px;
+          display: block;
+          color:$blue-color
+        }
+      }
+
+      .bottom-content {
+        font-family: $font-ethos-nova;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 33px;
+        text-align: left;
+        color: rgba(255, 255, 255, 0.75);
+
+      }
+
+      .joinWaitlist {
+        width: 130px;
+      }
+
+
     }
-
-    .bottom-content {
-      font-family: Poppins;
-      font-weight: 300;
-      font-size: 22px;
-      line-height: 33px;
-      text-align: left;
-      color: rgba(255, 255, 255, 0.75);
-      //letter-spacing: 1px;
-
-    }
-    .joinWaitlist{
-      width: 130px;
-    }
-
-
   }
+}
 }
 

@@ -8,7 +8,7 @@ const About=React.forwardRef((props, ref)  =>{
     <div className="about" ref={ref}>
       <Container>
          <div className="about-left">
-           <img src={employee}  alt="employee"/>
+           <img  className="img-employee" src={employee}  alt="employee"/>
            <div className="box">
              <span className="ten">10<sup>+</sup></span>
              <span className="experience">YEARS OF EXPERIENCE</span>

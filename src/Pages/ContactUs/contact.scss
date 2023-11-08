@@ -1,8 +1,8 @@
-@import "../../styles/global.scss";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0&display=swap');
+@import "../../global";
 
-.footer {
-  .footer-top {
+
+.contact {
+  .contact-top {
     background-color: $blue-color;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -11,7 +11,7 @@
     position: relative;
 
     .subscribe-label {
-      font-family: Poppins;
+      font-family: $font-poppins;
       font-size: 46px;
       font-weight: 700;
       line-height: 72px;
@@ -29,6 +29,7 @@
 
     ::placeholder {
       color: #939393;
+      font-family: $font-ethos-nova;
       font-size: 16px;
       font-weight: 500;
       line-height: 29px;
@@ -43,9 +44,9 @@
       display: flex;
       align-items: center;
       gap: 50px;
-      font-family: Ethos Nova;
-      font-size: 20px;
-      font-weight: 600;
+      font-family:$font-ethos-nova;
+      font-size: 18px;
+      font-weight: 500;
       border: none;
       position: absolute;
       right: 160px;
@@ -54,11 +55,12 @@
 
       .icon {
         background-color: $blue-color;
+        color: white;
       }
     }
   }
 
-  .footer-bottom {
+  .contact-bottom {
     background-image: radial-gradient(circle, rgba(25, 46, 107, 1), rgba(9, 20, 55, 1));
     padding: 112px 0px;
 
@@ -67,11 +69,11 @@
       display: grid;
       gap: 60px;
 
-      .footer-bottom-top {
+      .contact-bottom-top {
         display: grid;
         grid-template-columns: 45% 55%;
 
-        .footer-bottom-colA {
+        .contact-bottom-colA {
 
           display: flex;
 
@@ -80,12 +82,12 @@
             gap: 25px;
 
 
-            .footer-logo {
+            .contact-logo {
               width: 200px;
             }
 
             .colA-contain {
-              font-family: Poppins;
+              font-family: $font-ethos-nova;
               font-size: 18px;
               line-height: 28px;
               letter-spacing: 1px;
@@ -109,7 +111,7 @@
 
         }
 
-        .footer-bottom-colB {
+        .contact-bottom-colB {
           display: flex;
           margin-left: 50px;
           justify-content: space-between;
@@ -127,9 +129,9 @@
             a {
               display: block;
               color: var(--accent-400, #FFF);
-              font-family: Poppins;
+              font-family: $font-ethos-nova;
               font-size: 18px;
-              font-weight: 200;
+              font-weight: 500;
               text-decoration: none;
               line-height: 28px;
               text-align: left;
