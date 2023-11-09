@@ -1,13 +1,11 @@
-//@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,400&display=swap');
-//@import url('https://fonts.googleapis.com/css2?family=Ethos+Nova:wght@ 200;1,400;1, 700;1&display=swap');
+
 @font-face {
-  font-family: 'Poppins1';
-  src: url("Assets/Fonts/Poppins-Bold.otf");
+  font-family: 'Poppins';
+  src: url("Assets/Fonts/Poppins-Regular.otf");
 }
 $yellow-color: rgba(243, 191, 25, 1);
 $blue-color:rgba(26, 135, 201, 1);
-$font-poppins: 'Poppins', sans-serif;
-$font-ethos-nova:'Ethos Nova', sans-serif;
+
 
 
 @mixin page-heading{
@@ -15,7 +13,7 @@ $font-ethos-nova:'Ethos Nova', sans-serif;
   border: 1px solid rgba(243, 191, 25, 0.30);
   background: rgba(243, 191, 25, 0.08) ;
    color: #F3BF19;
-  font-family: 'Poppins1';
+  font-family: 'Poppins';
   font-size: 22px;
   font-weight: 500;
   width: max-content;
@@ -38,7 +36,7 @@ $font-ethos-nova:'Ethos Nova', sans-serif;
 
 .contact-bottom-heading{
   color: #1A87C9;
-  font-family: 'Poppins1';
+  font-family: 'Poppins';
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
