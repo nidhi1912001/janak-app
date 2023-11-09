@@ -1,29 +1,29 @@
 @use "../../global";
 @import "../../global";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;1,400&display=swap');
+
 
 .products{
   display: grid;
   gap: 40px;
-  .products-top{
-    text-align: center;
-    .products-top-heading{
-     margin: auto;
-      @include global.page-heading
-
-    }
-    .products-top-content{
-      color: #0E0E18;
-      font-family: $font-poppins;
-      font-size: 55px;
-      font-weight: 600;
-
-      span{
-        color: $blue-color;
-
-      }
-    }
-  }
+  //.top{
+  //  text-align: center;
+  //  .top-heading{
+  //   margin: auto;
+  //    @include global.page-heading
+  //
+  //  }
+  //  .top-content{
+  //    color: #0E0E18;
+  //    font-family: Poppins;
+  //    font-size: 55px;
+  //    font-weight: 600;
+  //
+  //    span{
+  //      color: $blue-color;
+  //
+  //    }
+  //  }
+  //}
   .products-bottom{
     display: grid;
     grid-template-columns: auto auto;
@@ -37,14 +37,14 @@
         display: grid;
         gap: 15px;
         .singleProduct-content-head{
-          font-family: $font-poppins;
+          font-family: Poppins;
           font-size: 25px;
           font-weight: 600;
 
         }
 
         .singleProduct-content-detail{
-          font-family: $font-poppins;
+          font-family: Poppins;
           font-size: 16px;
           font-weight: 400;
           color: rgba(62, 62, 70, 1);

@@ -6,33 +6,7 @@
   display: grid;
   gap: 40px;
 
-  .news-top {
-    margin: auto;
-    display: grid;
-    gap: 10px;
 
-    .news-heading {
-      margin: auto;
-      @include global.page-heading;
-
-    }
-
-    .news-content {
-
-      font-family: $font-poppins;
-      font-size: 55px;
-      font-weight: 700;
-      line-height: 65px;
-      letter-spacing: 0em;
-      text-align: center;
-      color: rgba(14, 14, 24, 1);
-
-      span {
-        color: $blue-color;
-      }
-
-    }
-  }
 
 
   .news-bottom {
@@ -80,14 +54,14 @@
           gap: 20px;
 
           .card-date {
-            font-family: $font-ethos-nova;
+            font-family: Poppins;
             color: #1A87C9;
             display: flex;
             gap: 10px;
           }
 
           .card-detail {
-            font-family: $font-poppins;
+            font-family: Poppins;
             font-size: 20px;
             font-weight: 700;
             letter-spacing: 0em;
@@ -115,7 +89,7 @@
       margin: auto;
 
       .viewAll-news {
-        font-family: $font-ethos-nova;
+        font-family: Poppins;
         font-size: 18px;
         line-height: 23.76px;
         align-self: center;

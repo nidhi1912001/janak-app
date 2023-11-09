@@ -4,74 +4,74 @@
 .partners-main{
   display: grid;
   margin: 50px 0px;
-.partners-top {
-  background: rgba(231, 243, 250, 0.2);
-  padding: 50px 190px;
-  display: grid;
-  gap: 25px;
-
-  .partners-label {
-    display: grid;
-    gap: 10px;
-
-    .partners-top-heading {
-      margin: auto;
-      @include global.page-heading;
-    }
-    .partners-top-content {
-      font-family: $font-poppins;
-      font-weight: 600;
-      font-size: 55px;
-      text-align: center;
-
-      span {
-        color: $blue-color;
-
-      }
-    }
-  }
-  .partners-details {
-    display: flex;
-    gap: 75px;
-    border: 3px dashed rgba(234, 234, 234, 1);
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 1);
-    padding: 30px 70px;
-
-
-    .partners-details-img {
-      width: 300px;
-      height: 137px;
-    }
-    .border {
-        border-left: 1px solid #D1D1D1;
-
-    }
-    .partners-details-content {
-      font-family:$font-ethos-nova;
-      font-size: 24px;
-      font-weight: 500;
-      line-height: 33.6px;
-      color: rgba(95, 95, 95, 1);
-    }
-  }
-  .carousel{
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    margin-top: 30px;
-   .carousel-link {
-     border: 1px solid rgba(231, 231, 231, 1);
-     border-radius: 30px;
-     width: 35px;
-
-    }
-    .carousel-link:hover {
-      border: 1px solid $blue-color;
-    }
-   }
-
-}
+//.partners-top {
+//  background: rgba(231, 243, 250, 0.2);
+//  padding: 50px 190px;
+//  display: grid;
+//  gap: 25px;
+//
+//  .partners-label {
+//    display: grid;
+//    gap: 10px;
+//
+//    .partners-top-heading {
+//      margin: auto;
+//      @include global.page-heading;
+//    }
+//    .partners-top-content {
+//      font-family: Poppins;
+//      font-weight: 600;
+//      font-size: 55px;
+//      text-align: center;
+//
+//      span {
+//        color: $blue-color;
+//
+//      }
+//    }
+//  }
+//  .partners-details {
+//    display: flex;
+//    gap: 75px;
+//    border: 3px dashed rgba(234, 234, 234, 1);
+//    border-radius: 10px;
+//    background-color: rgba(255, 255, 255, 1);
+//    padding: 30px 70px;
+//
+//
+//    .partners-details-img {
+//      width: 300px;
+//      height: 137px;
+//    }
+//    .border {
+//        border-left: 1px solid #D1D1D1;
+//
+//    }
+//    .partners-details-content {
+//      font-family:Poppins;
+//      font-size: 22px;
+//      font-weight: 300;
+//      line-height: 33.6px;
+//      color: rgba(95, 95, 95, 1);
+//    }
+//  }
+//  .carousel{
+//    display: flex;
+//    gap: 15px;
+//    justify-content: center;
+//    margin-top: 30px;
+//   .carousel-link {
+//     border: 1px solid rgba(231, 231, 231, 1);
+//     border-radius: 30px;
+//     width: 35px;
+//
+//    }
+//    .carousel-link:hover {
+//      border: 1px solid $blue-color;
+//    }
+//   }
+//
+//}
 
 
 .partners-bottom {
@@ -79,13 +79,27 @@
   background-repeat: no-repeat;
   background-position: left;
   height: 730px;
+  position: relative;
 
-  .container {
-    margin: 50px auto;
+
+    .mobile-input{
+      position: absolute;
+
+      bottom: 50%;
+      left: 26.5%;
+
+      .input{
+        width: 180px;
+        border: 1px solid #CBCBCB;
+        border-radius: 16px ;
+        padding: 10px;
+        rotate:1.5deg;
+      }
+
+    }
 
 
     .partner-bottom-content {
-      text-align: left;
       float: right;
       max-width: 50%;
       display: flex;
@@ -93,13 +107,14 @@
       justify-content: center;
       align-items: flex-start;
       gap: 30px;
+      margin-top: 80px;
 
 
       .partner-label {
         border: 1px solid rgba(255, 255, 255, 0.3);
         padding: 0px 15px;
         border-radius: 5px;
-        font-family: $font-poppins;
+        font-family: Poppins;
         font-size: 24px;
         font-weight: 400;
         line-height: 29px;
@@ -112,7 +127,7 @@
 
       .partner-heading {
         font-size: 55px;
-        font-family: $font-poppins;
+        font-family: Poppins;
         font-weight: 700;
         color: rgba(255, 255, 255, 1);
         line-height: 60px;
@@ -125,8 +140,8 @@
       }
 
       .bottom-content {
-        font-family: $font-ethos-nova;
-        font-weight: 300;
+        font-family: Poppins;
+        font-weight: 100;
         font-size: 22px;
         line-height: 33px;
         text-align: left;
@@ -140,7 +155,7 @@
 
 
     }
-  }
+
 }
 }
 

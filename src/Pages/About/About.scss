@@ -1,8 +1,6 @@
 
 @use "../../global";
 @import "../../global";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;1,400&display=swap');
 
 .about {
   background-color: rgba(231, 243, 250, 0.2);
@@ -37,7 +35,7 @@
         .ten {
 
           color: #FFF;
-          font-family: $font-poppins;
+          font-family: Poppins;
           font-size: 50px;
           font-style: normal;
           font-weight: 600;
@@ -67,7 +65,16 @@
       gap: 25px;
 
       .about-right-heading {
-        @include global.page-heading
+        border-radius: 5px;
+        border: 1px solid rgba(243, 191, 25, 0.30);
+        background: rgba(243, 191, 25, 0.08) ;
+        color: #F3BF19;
+        font-family: 'Poppins';
+        font-size: 22px;
+        font-weight: 500;
+        width: max-content;
+        padding: 0px 18px;
+        line-height: 26.85px;
       }
 
       .about-right-container {
@@ -91,7 +98,7 @@
 
         .about-container-middle {
           color: #5F5F5F;
-          font-family: $font-ethos-nova;
+          font-family: Poppins;
           font-size: 20px;
           font-style: normal;
           font-weight: 500;
@@ -104,7 +111,7 @@
 
           .about-container-heading {
             color: $blue-color;
-            font-family: $font-ethos-nova;
+            font-family: Poppins;
             font-size: 25px;
             font-style: normal;
             font-weight: 800
@@ -121,7 +128,7 @@
 
             .about-end-content {
               color: var(--accent-100, #0E0E18);
-              font-family:$font-ethos-nova;
+              font-family:Poppins;
               font-size: 21px;
               font-style: italic;
               font-weight: 500;

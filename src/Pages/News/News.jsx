@@ -64,9 +64,9 @@ const News = React.forwardRef((props, ref)  => {
 
   return (
     <div className="news" ref={ref}>
-      <div className="news-top">
-        <div className="news-heading">Latest News</div>
-        <p className="news-content"> Find the top <span> Insights & News </span></p>
+      <div className="top">
+        <div className="top-heading">Latest News</div>
+        <p className="top-content"> Find the top <span> Insights & News </span></p>
       </div>
 
       <div className="news-bottom">
