@@ -48,7 +48,7 @@ return(
 
     <div id="login">
       <div >
-      <a >Login</a>
+      <a>Login</a>
       <span>/</span>
       <button >Sign Up</button>
       </div>
