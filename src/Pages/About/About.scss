@@ -1,8 +1,6 @@
 
-@use "/src/styles/global";
-@import  "../../styles/global.scss";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;1,400&display=swap');
+@use "../../global";
+@import "../../global";
 
 .about {
   background-color: rgba(231, 243, 250, 0.2);
@@ -16,7 +14,7 @@
     .about-left {
       position: relative;
 
-      img {
+      .img-employee {
         width: 600px;
         height: 560px;
         margin: 20px 0px;
@@ -28,7 +26,7 @@
         top: 50px;
         right: 70px;
         border-radius: 10px;
-        background: #1A87C9;
+        background: $blue-color;
         display: flex;
         gap: 20px;
         padding: 0px 20px;
@@ -67,13 +65,22 @@
       gap: 25px;
 
       .about-right-heading {
-        @include global.page-heading
+        border-radius: 5px;
+        border: 1px solid rgba(243, 191, 25, 0.30);
+        background: rgba(243, 191, 25, 0.08) ;
+        color: #F3BF19;
+        font-family: 'Poppins';
+        font-size: 22px;
+        font-weight: 500;
+        width: max-content;
+        padding: 0px 18px;
+        line-height: 26.85px;
       }
 
       .about-right-container {
 
         display: grid;
-        gap: 40px;
+        gap: 35px;
 
 
         .about-container-start {
@@ -84,14 +91,14 @@
           line-height: 50px;
 
           span {
-            color: #1A87C9;
+            color: $blue-color;
 
           }
         }
 
         .about-container-middle {
           color: #5F5F5F;
-          font-family: Ethos Nova;
+          font-family: Poppins;
           font-size: 20px;
           font-style: normal;
           font-weight: 500;
@@ -103,8 +110,8 @@
           gap: 10px;
 
           .about-container-heading {
-            color: #1A87C9;
-            font-family: Ethos Nova;
+            color: $blue-color;
+            font-family: Poppins;
             font-size: 25px;
             font-style: normal;
             font-weight: 800
@@ -116,15 +123,16 @@
 
             span {
               width: 12px;
-              background: #F3BF19;
+              background: $yellow-color;
             }
 
             .about-end-content {
               color: var(--accent-100, #0E0E18);
-              font-family: Ethos Nova;
-              font-size: 23px;
+              font-family:Poppins;
+              font-size: 21px;
               font-style: italic;
-              font-weight: 600;
+              font-weight: 500;
+              line-height: 140%;
             }
           }
         }

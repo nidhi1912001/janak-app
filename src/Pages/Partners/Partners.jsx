@@ -39,10 +39,10 @@ const Partners = React.forwardRef((props, ref)  => {
   };
   return (
     <div className="partners-main" ref={ref}>
-      <div className="partners-top">
+      <div className="top">
         <div className="partners-label">
-          <div className="partners-top-heading"> Our Partners </div>
-          <p className="partners-top-content">
+          <div className="top-heading"> Our Partners </div>
+          <p className="top-content">
             Endorsed by Nvidia <span> Inception Program </span>
           </p>
         </div>
@@ -55,13 +55,20 @@ const Partners = React.forwardRef((props, ref)  => {
 
         <div className="carousel">
           {carouselSlidesData.map((ele, id) => {
-            return <a onClick={() => handleClick(ele, id)} key={id}></a>;
+            return <a className="carousel-link" onClick={() => handleClick(ele, id)} key={id}></a>;
           })}
         </div>
       </div>
+
+
+
       <div className="partners-bottom">
 
         <Container>
+
+          <div className="mobile-input">
+            <input className="input" type="text" placeholder="hello"/>
+          </div>
 
         <div className="partner-bottom-content">
           <label className="partner-label">Coming Soon</label>

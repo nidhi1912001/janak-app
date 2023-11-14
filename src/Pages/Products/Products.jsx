@@ -41,9 +41,9 @@ const Products = React.forwardRef( ( props, ref ) => {
     return (
       <Container>
         <div className="products" ref={ref}>
-          <div className="products-top">
-            <div className="products-top-heading"> Our Products</div>
-            <p className="products-top-content"> The Janak Knowledge <span> Engine </span></p>
+          <div className="top">
+            <div className="top-heading"> Our Products</div>
+            <p className="top-content"> The Janak Knowledge <span> Engine </span></p>
           </div>
 
           <div className="products-bottom">
@@ -54,7 +54,7 @@ const Products = React.forwardRef( ( props, ref ) => {
                     <p className="singleProduct-content-head">{product.head}</p>
                     <p className="singleProduct-content-detail">{product.content}</p>
                   </div>
-                  <img src={product.svg}/>
+                  <img className="svg" src={product.svg}/>
                 </div>
               )
             } )}

@@ -1,0 +1,73 @@
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("Assets/Fonts/Poppins-Regular.otf");
+}
+$yellow-color: rgba(243, 191, 25, 1);
+$blue-color:rgba(26, 135, 201, 1);
+
+
+
+//@mixin page-heading{
+  //border-radius: 5px;
+  //border: 1px solid rgba(243, 191, 25, 0.30);
+  //background: rgba(243, 191, 25, 0.08) ;
+  // color: #F3BF19;
+  //font-family: 'Poppins';
+  //font-size: 22px;
+  //font-weight: 500;
+  //width: max-content;
+  //padding: 0px 18px;
+  //line-height: 26.85px;
+//}
+
+
+.icon{
+  background:$yellow-color;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  padding: 8px;
+
+}
+
+
+.contact-bottom-heading{
+  color: #1A87C9;
+  font-family: 'Poppins';
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px
+}
+
+.top{
+  text-align: center;
+  .top-heading{
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid rgba(243, 191, 25, 0.30);
+    background: rgba(243, 191, 25, 0.08) ;
+    color: #F3BF19;
+    font-family: 'Poppins';
+    font-size: 22px;
+    font-weight: 500;
+    width: max-content;
+    padding: 0px 18px;
+    line-height: 26.85px;
+
+  }
+  .top-content{
+    color: #0E0E18;
+    font-family: Poppins;
+    font-size: 55px;
+    font-weight: 600;
+
+    span{
+      color: $blue-color;
+
+    }
+  }
+}

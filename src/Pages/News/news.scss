@@ -1,139 +1,108 @@
-@use "../../styles/global.scss";
+@use "../../global";
+@import "../../global";
 
-.news{
+.news {
   padding: 50px 0px;
   display: grid;
   gap: 40px;
 
-  .news-top{
-    margin: auto;
+
+
+
+  .news-bottom {
     display: grid;
-    gap:10px;
+    gap: 40px;
 
-    .news-heading{
-      margin: auto;
-      @include global.page-heading;
+    .news-card {
+      display: flex;
+      position: relative;
+      overflow: hidden;
+      align-items: center;
+      margin: 0 50px;
 
-    }
-    .news-content{
-
-      font-family: Poppins;
-      font-size: 55px;
-      font-weight: 700;
-      line-height: 65px;
-      letter-spacing: 0em;
-      text-align: center;
-      color: rgba(14, 14, 24, 1);
-
-      span{
-        color: rgba(26, 135, 201, 1);
+      .vector-left {
+        width: 58px;
+        position: absolute;
+        left: 0;
+        width: 58px;
+        margin: auto;
       }
 
-    }
-  }
 
-
-    .news-bottom {
-      display: grid;
-      gap: 40px;
-
-      .news-card {
-        display: flex;
-        position: relative;
-
-        overflow: hidden;
-        align-items: center;
-
-
-        .vector-left {
-          width: 58px;
-          //height: 100%;
-          //width: 58px;
-          //position: absolute;
-          p{
-
-          }
-
-
-        }
-
-        .cards {
-
-          scroll-behavior: smooth;
-          display: flex;
-          gap: 30px;
-
-
-
-          .card {
-            border: 1px solid #ECECEC;
-            background: #FAFDFE;
-            padding: 38px 24px;
-            min-width: 400px;
-            display: grid;
-            gap: 20px;
-
-            .card-date {
-              font-family: Poppins;
-              color: #1A87C9;
-              display: flex;
-              gap: 10px;
-            }
-
-            .card-detail {
-              font-family: Poppins;
-              font-size: 20px;
-              font-weight: 700;
-              letter-spacing: 0em;
-              text-align: left;
-
-            }
-
-            .card-img {
-              width: 100%;
-            }
-          }
-
-
-
-
-      }
-
-        .vector-right{
-          position: absolute;
-          right: 0;
-          width: 58px;
-          margin: auto;
-          //height: 100%;
-          //margin: auto;
-
-        }
-
-
-    }
-
-      .viewAll {
-        background-color: #1a87c8;
-        border-radius: 68px;
-        width: max-content;
-        display: flex;
-        gap: 20px;
-        padding: 8px 20px;
+      .vector-right {
+        width: 58px;
+        position: absolute;
+        right: 0;
+        width: 58px;
         margin: auto;
 
-        .viewAll-news {
-          font-family: Poppins;
-          font-size: 18px;
-          line-height: 23.76px;
-          align-self: center;
-          color: rgba(255, 255, 255, 1);
-
-        }
-
-        .icon {
-          color: white;
-        }
 
       }
+
+      .cards {
+        scroll-behavior: smooth;
+        display: flex;
+        gap: 30px;
+
+
+        .card {
+          border: 1px solid #ECECEC;
+          background: #FAFDFE;
+          padding: 38px 24px;
+          min-width: 400px;
+          display: grid;
+          gap: 20px;
+
+          .card-date {
+            font-family: Poppins;
+            color: #1A87C9;
+            display: flex;
+            gap: 10px;
+          }
+
+          .card-detail {
+            font-family: Poppins;
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 0em;
+
+          }
+
+          .card-img {
+            width: 100%;
+          }
+        }
+
+
+      }
+
+
+    }
+
+    .viewAll {
+      background-color: $blue-color;
+      border-radius: 68px;
+      width: max-content;
+      display: flex;
+      gap: 20px;
+      padding: 8px 20px;
+      margin: auto;
+
+      .viewAll-news {
+        font-family: Poppins;
+        font-size: 18px;
+        line-height: 23.76px;
+        align-self: center;
+        color: rgba(255, 255, 255, 1);
+        background: none;
+        border: none;
+
+      }
+
+      .icon {
+        color: white;
+      }
+
+    }
   }
 }

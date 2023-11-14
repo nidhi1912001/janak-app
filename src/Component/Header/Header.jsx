@@ -1,10 +1,9 @@
 import React,{forwardRef} from 'react'
+import './Header.scss'
 import logo from "../../Assets/image/logo.png"
 import Login from "../Login/Login";
 import SignUp from "../SignUp/SignUp";
-import {BsArrowUpRight} from "react-icons/bs"
 import{ImArrowUpRight2} from "react-icons/im"
-import './Header.scss'
 import Container from '../Container/Container';
 
 
@@ -21,11 +20,11 @@ const Header=React.forwardRef((props, ref) => {
 
 
     const dataBtn=[{refName:homeRef,title:"Home"},
-      {refName: aboutRef,title: "About"},
-      {refName: productsRef, title: "Products"},
-      {refName: partnerRef, title: "Partners"},
-      {refName: newsRef, title: "News"},
-      {refName: contactRef, title: "Contact Us"}]
+                    {refName: aboutRef,title: "About"},
+                    {refName: productsRef, title: "Products"},
+                    {refName: partnerRef, title: "Partners"},
+                    {refName: newsRef, title: "News"},
+                    {refName: contactRef, title: "Contact Us"}]
 
 
 return(
@@ -52,7 +51,6 @@ return(
       <span>/</span>
       <button >Sign Up</button>
       </div>
-      {/*<BsArrowUpRight style={{ fontWeight: 'bold' }} className="headerIcon"/>*/}
       <ImArrowUpRight2 className="icon"/>
     </div>
   </div>
