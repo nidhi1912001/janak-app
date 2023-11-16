@@ -4,58 +4,71 @@
 .contact {
   .contact-top {
     background-color: $blue-color;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 100px 144px;
-    align-items: center;
-    position: relative;
+    padding: 110px 0px;
 
-    .subscribe-label {
-      font-family: Poppins;
-      font-size: 46px;
-      font-weight: 700;
-      line-height: 72px;
-      color: white;
-      padding-right: 50px;
-    }
-
-    .subscribe-input {
-      width: 635px;
-      border-radius: 34px;
-      height: 64px;
-      border: none;
-
-    }
-
-    ::placeholder {
-      color: #939393;
-      font-family: Poppins;
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 29px;
-      padding-left: 30px;
-    }
-
-    .subscribe-button {
-      background-color: $yellow-color;
-      width: max-content;
-      padding: 8px 20px;
-      border-radius: 72px;
-      display: flex;
+    .container {
+      display: grid;
+      grid-template-columns: 50% 50%;
       align-items: center;
-      gap: 50px;
-      font-family:Poppins;
-      font-size: 18px;
-      font-weight: 500;
-      border: none;
-      position: absolute;
-      right: 160px;
-      letter-spacing: 1px;
+      position: relative;
 
 
-      .icon {
-        background-color: $blue-color;
+      .subscribe-label {
+        font-family: Poppins;
+        font-size: 46px;
+        font-weight: 700;
+        line-height: 72px;
         color: white;
+        padding-right: 50px;
+      }
+
+      .subscribe-input {
+        width: 635px;
+        border-radius: 34px;
+        height: 64px;
+        border: none;
+
+      }
+
+      ::placeholder {
+        color: #939393;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 29px;
+        text-indent: 30px;
+      }
+
+      .subscribe-input:focus {
+        outline: none;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 500;
+        text-indent: 30px;
+      }
+
+
+      .subscribe-button {
+        background-color: $yellow-color;
+        width: max-content;
+        padding: 8px 20px;
+        border-radius: 72px;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 500;
+        border: none;
+        position: absolute;
+        right: 25px;
+        letter-spacing: 1px;
+
+
+        .icon {
+          background-color: $blue-color;
+          color: white;
+        }
       }
     }
   }

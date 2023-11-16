@@ -31,7 +31,7 @@ const Home = React.forwardRef((props, ref) => {
 
   return (
     <>
-      <div className="homeMain" ref={ref}>
+      <div className="home-main" ref={ref}>
 
       <div className="home-top">
         <Container>

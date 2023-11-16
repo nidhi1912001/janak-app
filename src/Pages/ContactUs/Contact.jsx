@@ -8,19 +8,24 @@ import { BiHomeAlt } from "react-icons/bi"
 import { LuMail } from "react-icons/lu"
 import Container from "../../Component/Container/Container";
 import liveChat from "../../Assets/image/Live chat.png"
-import home from "../../Assets/image/fi-rr-home.png"
-import {AiFillHome} from "react-icons/ai"
+
 
 
 const Contact = React.forwardRef((props, ref)  => {
 
   return (
+
     <div className="contact" ref={ref}>
 
+
       <div className="contact-top">
+        <Container>
+
+
         <p className="subscribe-label">Legal Knowledge as a Tool for Social Change</p>
         <input className="subscribe-input" type="text" placeholder="Enter Email Address"/>
         <button className='subscribe-button'>Subscribe <ImArrowUpRight2 className='icon'/></button>
+        </Container>
       </div>
 
       <div className="contact-bottom">
@@ -45,7 +50,6 @@ const Contact = React.forwardRef((props, ref)  => {
 
             <div className="contact-bottom-colB">
 
-              {/*<div className="footer-bottom-colB"></div>*/}
               <div className="colB-left">
 
                 <h3 className="contact-bottom-heading">Quick Links</h3>

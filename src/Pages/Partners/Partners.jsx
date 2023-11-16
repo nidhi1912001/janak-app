@@ -39,8 +39,8 @@ const Partners = React.forwardRef((props, ref)  => {
   };
   return (
     <div className="partners-main" ref={ref}>
-      <div className="top">
-        <div className="partners-label">
+      <div className="partners-top">
+        <div className="top">
           <div className="top-heading"> Our Partners </div>
           <p className="top-content">
             Endorsed by Nvidia <span> Inception Program </span>

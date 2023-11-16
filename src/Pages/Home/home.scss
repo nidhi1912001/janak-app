@@ -1,5 +1,5 @@
 @import "../../global";
-.homeMain {
+.home-main {
   display: grid;
   gap: 90px;
 
@@ -20,6 +20,7 @@
       justify-content: center;
       gap: 40px;
       line-height: 77px;
+
 
 
 
@@ -96,7 +97,10 @@
         border-radius:55px;
         border: none;
         padding: 40px;
-
+        font-size: 20px;
+        font-weight: 500;
+        color: black;
+        font-family: Poppins;
       }
       ::placeholder{
         justify-content: center;
@@ -148,6 +152,37 @@
     }
   }
 }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 768px){
+  .home-main{
+    .home-top{
+      background-size: 200%;
+      background-position: center;
+      .container{
+        height: 400px;
+        display: grid;
+        gap: 10px;
+
+
+        .home-heading{
+          font-size: 30px;
+          line-height: 50px;
+
+
+          .home-heading-span{
+
+          }
+
+
+
+
+        }
+      }
+
+    }
+  }
 }
 
 
