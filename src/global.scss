@@ -1,16 +1,29 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url("../public/Fonts/Poppins-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
 
 @font-face {
   font-family: 'Poppins';
-  src: url("../public/Fonts/Poppins-Regular.otf");
+  src: url("../public/Fonts/Poppins-Medium.ttf");
+  font-weight: 500;
 }
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../public/Fonts/Poppins-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
 $yellow-color: rgba(243, 191, 25, 1);
-$blue-color:rgba(26, 135, 201, 1);
+$blue-color: rgba(26, 135, 201, 1);
 
 
-
-
-.icon{
-  background:$yellow-color;
+.icon {
+  background: $yellow-color;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -21,42 +34,78 @@ $blue-color:rgba(26, 135, 201, 1);
 }
 
 
-.contact-bottom-heading{
+.contact-bottom-heading {
   color: #1A87C9;
   font-family: 'Poppins';
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
-  line-height: 34px
+  line-height: 34px;
 }
 
-.top{
+.top {
   text-align: center;
   display: grid;
   gap: 10px;
-  .top-heading{
+
+  .top-heading {
     margin: auto;
     border-radius: 5px;
     border: 1px solid rgba(243, 191, 25, 0.30);
-    background: rgba(243, 191, 25, 0.08) ;
+    background: rgba(243, 191, 25, 0.08);
     color: #F3BF19;
     font-family: 'Poppins';
     font-size: 22px;
     font-weight: 500;
-    width: max-content;
-    padding: 0px 18px;
+    width:200px;
     line-height: 26.85px;
 
   }
-  .top-content{
+
+  .top-content {
     color: #0E0E18;
     font-family: Poppins;
     font-size: 55px;
     font-weight: 600;
 
-    span{
+    span {
       color: $blue-color;
 
+    }
+  }
+}
+
+@media (min-width: 375px) and (max-width: 425px) {
+  .icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .contact-bottom-heading {
+    font-weight: 500;
+    margin: auto;
+  }
+
+  .top {
+    gap: 15px;
+    .top-heading {
+      font-size: 18px;
+      width: 150px;
+    }
+
+    .top-content {
+      font-size: 32px;
+
+    }
+  }
+
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .top{
+    gap: 15px;
+    .top-content{
+      font-size: 36px;
     }
   }
 }

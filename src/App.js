@@ -21,10 +21,10 @@ function App() {
 
   return (
     <>
-      <Header ref={{ homeRef, aboutRef, productsRef,partnerRef, newsRef, contactRef }}/>
-      <Home ref={homeRef} />
-      <About  ref={aboutRef}/>
-      <Products ref={productsRef}/>
+      {/*<Header ref={{ homeRef, aboutRef, productsRef,partnerRef, newsRef, contactRef }}/>*/}
+      {/*<Home ref={homeRef} />*/}
+      {/*<About  ref={aboutRef}/>*/}
+      {/*<Products ref={productsRef}/>*/}
       <Partners ref={partnerRef}/>
       <News  ref={newsRef}/>
       <Contact ref={contactRef}/>

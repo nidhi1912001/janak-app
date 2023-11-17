@@ -39,7 +39,9 @@ const Partners = React.forwardRef((props, ref)  => {
   };
   return (
     <div className="partners-main" ref={ref}>
+
       <div className="partners-top">
+        <Container>
         <div className="top">
           <div className="top-heading"> Our Partners </div>
           <p className="top-content">
@@ -58,6 +60,7 @@ const Partners = React.forwardRef((props, ref)  => {
             return <a className="carousel-link" onClick={() => handleClick(ele, id)} key={id}></a>;
           })}
         </div>
+      </Container>
       </div>
 
 

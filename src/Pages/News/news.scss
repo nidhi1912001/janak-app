@@ -6,9 +6,6 @@
   display: grid;
   gap: 40px;
 
-
-
-
   .news-bottom {
     display: grid;
     gap: 40px;
@@ -18,33 +15,24 @@
       position: relative;
       overflow: hidden;
       align-items: center;
-      margin: 0 50px;
 
       .vector-left {
-        width: 58px;
         position: absolute;
-        left: 0;
+        left: 50px;
         width: 58px;
         margin: auto;
       }
-
 
       .vector-right {
-        width: 58px;
         position: absolute;
-        right: 0;
+        right: 50px;
         width: 58px;
         margin: auto;
-
-
       }
-
       .cards {
         scroll-behavior: smooth;
         display: flex;
         gap: 30px;
-
-
         .card {
           border: 1px solid #ECECEC;
           background: #FAFDFE;
@@ -52,30 +40,24 @@
           min-width: 400px;
           display: grid;
           gap: 20px;
-
           .card-date {
             font-family: Poppins;
             color: #1A87C9;
             display: flex;
             gap: 10px;
           }
-
           .card-detail {
             font-family: Poppins;
             font-size: 20px;
             font-weight: 700;
             letter-spacing: 0em;
-
           }
-
           .card-img {
             width: 100%;
           }
         }
 
-
       }
-
 
     }
 
@@ -105,4 +87,102 @@
 
     }
   }
+}
+
+
+@media (min-width: 375px) and (max-width: 425px) {
+  .news {
+    gap: 30px;
+    .news-bottom {
+      gap: 30px;
+
+      .news-card {
+        .vector-left {
+          width: 40px;
+          left: 0;
+          background-color: white;
+
+        }
+
+        .vector-right {
+          width: 40px;
+          right: 0;
+        }
+
+        .container {
+          .cards {
+            gap: 35px;
+            .card {
+              min-width: 350px;
+              padding: 30px 25px;
+              gap: 15px;
+
+              .card-detail {
+                font-size: 16px;
+                font-weight: 500;
+              }
+
+              .card-img {
+                width: 80%;
+                margin: auto;
+              }
+            }
+          }
+        }
+      }
+
+      .viewAll {
+        padding: 8px 16px;
+
+        .viewAll-news {
+          font-size: 16px;
+
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .news{
+    .news-bottom{
+      .news-card{
+        .vector-right{
+          width: 50px;
+          right: 10px;
+
+        }
+        .vector-left{
+          width: 50px;
+          background-color: white;
+          left: 10px;
+
+        }
+        .container{
+          .cards{
+            .card{
+              min-width: 330px;
+              padding: 25px 24px;
+              .card-date{
+
+              }
+              .card-detail{
+                font-size: 16px;
+                font-weight: 500;
+
+              }
+              .card-img{
+                width: 95%;
+
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+
 }
