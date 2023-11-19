@@ -51,7 +51,7 @@ $blue-color: rgba(26, 135, 201, 1);
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media screen and (min-width:325px) and (max-width: 425px) {
   .icon {
     width: 32px;
     height: 32px;
@@ -60,5 +60,15 @@ $blue-color: rgba(26, 135, 201, 1);
   .contact-bottom-heading {
     font-weight: 500;
     margin: auto;
+  }
+  
+  .top{
+    .top-heading{
+
+    }
+    .top-content{
+      font-size: 20px;
+
+    }
   }
 }

@@ -21,12 +21,12 @@ function App() {
 
   return (
     <>
-      <Header ref={{ homeRef, aboutRef, productsRef,partnerRef, newsRef, contactRef }}/>
-      <Home ref={homeRef} />
+      {/* <Header ref={{ homeRef, aboutRef, productsRef,partnerRef, newsRef, contactRef }}/> */}
+      {/* <Home ref={homeRef} /> */}
       <About  ref={aboutRef}/>
       <Products ref={productsRef}/>
-      <Partners ref={partnerRef}/>
-      <News  ref={newsRef}/>
+      {/* <Partners ref={partnerRef}/> */}
+      {/* <News  ref={newsRef}/> */}
       <Contact ref={contactRef}/>
    </>
   );

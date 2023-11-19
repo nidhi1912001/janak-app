@@ -1,4 +1,3 @@
-
 @use "../../global";
 @import "../../global";
 
@@ -10,7 +9,6 @@
     display: grid;
     grid-template-columns: 55% 45%;
 
-
     .about-left {
       position: relative;
 
@@ -18,7 +16,6 @@
         width: 600px;
         height: 560px;
         margin: 20px 0px;
-
       }
 
       .box {
@@ -33,8 +30,7 @@
         width: 280px;
 
         .ten {
-
-          color: #FFF;
+          color: #fff;
           font-family: Poppins;
           font-size: 50px;
           font-style: normal;
@@ -42,19 +38,17 @@
 
           sup {
             font-size: 25px;
-            font-weight: 700
+            font-weight: 700;
           }
-
         }
 
         .experience {
           margin: auto;
-          color: #FFF;
+          color: #fff;
           font-family: Poppins;
           font-size: 15px;
           font-weight: 500;
           line-height: 24px;
-
         }
       }
     }
@@ -66,10 +60,10 @@
 
       .about-right-heading {
         border-radius: 5px;
-        border: 1px solid rgba(243, 191, 25, 0.30);
-        background: rgba(243, 191, 25, 0.08) ;
-        color: #F3BF19;
-        font-family: 'Poppins';
+        border: 1px solid rgba(243, 191, 25, 0.3);
+        background: rgba(243, 191, 25, 0.08);
+        color: #f3bf19;
+        font-family: "Poppins";
         font-size: 22px;
         font-weight: 500;
         width: max-content;
@@ -78,13 +72,11 @@
       }
 
       .about-right-container {
-
         display: grid;
         gap: 35px;
 
-
         .about-container-start {
-          color: #0E0E18;
+          color: #0e0e18;
           font-family: Poppins;
           font-size: 50px;
           font-weight: 600;
@@ -92,12 +84,11 @@
 
           span {
             color: $blue-color;
-
           }
         }
 
         .about-container-middle {
-          color: #5F5F5F;
+          color: #5f5f5f;
           font-family: Poppins;
           font-size: 20px;
           font-style: normal;
@@ -114,10 +105,10 @@
             font-family: Poppins;
             font-size: 25px;
             font-style: normal;
-            font-weight: 800
+            font-weight: 800;
           }
 
-          .about-container-detail{
+          .about-container-detail {
             display: flex;
             gap: 12px;
 
@@ -127,12 +118,169 @@
             }
 
             .about-end-content {
-              color: var(--accent-100, #0E0E18);
-              font-family:Poppins;
+              color: var(--accent-100, #0e0e18);
+              font-family: Poppins;
               font-size: 21px;
               font-style: italic;
               font-weight: 500;
               line-height: 140%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 375px) and (max-width: 425px) {
+  .about {
+    padding: 30px 0px;
+    .container {
+      grid-template-columns: auto;
+      gap: 20px;
+      .about-left {
+        .img-employee {
+          width: 80%;
+          margin: 0px 20px;
+          height: 300px;
+        }
+
+        .box {
+          top: 20px;
+          right: 15px;
+          width: 150px;
+          padding: 0px 5px;
+          gap: 10px;
+
+          .ten {
+            font-size: 28px;
+            margin-left: 5px;
+
+            sup {
+              font-size: 15px;
+            }
+          }
+
+          .experience {
+            font-size: 10px;
+            font-weight: 500;
+            line-height: 15px;
+          }
+        }
+      }
+
+      .about-right {
+        gap: 20px;
+
+        .about-right-heading {
+          margin: auto;
+        }
+
+        .about-right-container {
+          gap: 20px;
+          .about-container-start {
+            font-size: 30px;
+            line-height: 40px;
+            text-align: center;
+          }
+
+          .about-container-middle {
+            font-size: 16px;
+            line-height: 25px;
+          }
+
+          .about-container-end {
+            .about-container-heading {
+              font-size: 22px;
+            }
+
+            .about-container-detail {
+              span {
+                width: 15px;
+              }
+
+              .about-end-content {
+                font-size: 16px;
+                line-height: 25px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .about {
+    padding: 30px 0px;
+    .container {
+      grid-template-columns: auto;
+      .about-left {
+        .img-employee {
+          width: 90%;
+          height: 400px;
+        }
+
+        .box {
+          top: 50px;
+          right: 8px;
+          width: 150px;
+          padding: 0px 5px;
+          gap: 10px;
+
+          .ten {
+            font-size: 28px;
+            margin-left: 5px;
+
+            sup {
+              font-size: 15px;
+            }
+          }
+
+          .experience {
+            font-size: 10px;
+            font-weight: 500;
+            line-height: 15px;
+          }
+        }
+      }
+
+      .about-right {
+        gap: 15px;
+
+        .about-right-heading {
+          font-size: 18px;
+          padding: 0px 16px;
+        }
+
+        .about-right-container {
+          gap: 10px;
+          .about-container-start {
+            font-size: 25px;
+            line-height: 32px;
+          }
+
+          .about-container-middle {
+            font-size: 15px;
+            line-height: 20px;
+          }
+
+          .about-container-end {
+            gap: 5px;
+            .about-container-heading {
+              font-size: 20px;
+            }
+
+            .about-container-detail {
+              span {
+                width: 15px;
+              }
+
+              .about-end-content {
+                font-size: 15px;
+                line-height: 20px;
+              }
             }
           }
         }
