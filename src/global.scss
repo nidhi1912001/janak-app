@@ -7,6 +7,14 @@
 }
 
 @font-face {
+  font-family: "Poppins";
+  src: url("../public/Fonts/Poppins-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+
+}
+
+@font-face {
   font-family: 'Poppins';
   src: url("../public/Fonts/Poppins-Medium.ttf");
   font-weight: 500;
@@ -66,7 +74,7 @@ $blue-color:rgba(26, 135, 201, 1);
     color: #0E0E18;
     font-family: Poppins;
     font-size: 55px;
-    font-weight: 600;
+    font-weight: 700;
 
     span{
       color: $blue-color;

@@ -1,6 +1,4 @@
-import React, { forwardRef } from "react";
 import "./Header.scss";
-import logo from "../../Assets/image/logo.png";
 import React, { forwardRef, useState } from 'react'
 import './Header.scss'
 import logo from "../../Assets/image/logo.png"
@@ -47,25 +45,9 @@ const Header = React.forwardRef( ( props, ref ) => {
           <nav className="bars">
 
             <button onClick={toggleBar}> {bar ? <RxCross2/> : <HiBars4/>} </button>
-            {/*{bar &&*/}
-            {/*<div>*/}
-            {/*  <ul  className="nav-pages">*/}
-            {/*    <img src={logo} alt="logo"/>*/}
-            {/*    {dataBtn.map((data)=>{*/}
-            {/*      return(*/}
-            {/*        <li className='page-btn' onClick={()=>smoothScroll(data.refName.current)}>{data.title}</li>*/}
-
-
-            {/*      )*/}
-            {/*    })}*/}
-
-            {/*  </ul>*/}
-            {/*</div>*/}
-            {/*}*/}
           </nav>
 
           <div className={bar ? "logo-mobile" : "logo"}>
-
             <img src={logo} alt="logo"/>
           </div>
 
@@ -80,7 +62,7 @@ const Header = React.forwardRef( ( props, ref ) => {
 
           </div>
 
-          <div className={bar ? "userLogin-mobile" : "userLogin"}>
+          <div className={bar ? "userLogin-mobile" : "user-login"}>
             <div className="login-signUp">
               <a className="login">Login</a>
               <span className="slash">/</span>

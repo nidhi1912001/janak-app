@@ -1,38 +1,13 @@
 import React, { useState } from "react";
-import partner from "../../Assets/image/partner.png";
+import partnerData from "../../utilities/partnerData";
 import joinWaitlist from "../../Assets/image/join-waitlist.png";
 import "./partners.scss";
 import Container from "../../Component/Container/Container";
 
 const Partners = React.forwardRef((props, ref)  => {
-  const carouselSlidesData = [
-    {
-      id: 1,
-      img: `${partner}`,
-      content:
-        "Our collaboration with the revered Nvidia Inception " +
-        "Program amplifies our dedication. With their unparalleled technological prowess, we continue to" +
-        "deliver top-tier solutions for all your agreement1",
-    },
-    {
-      id: 2,
-      img: `${partner}`,
-      content:
-        "Our collaboration with the revered Nvidia Inception " +
-        "Program amplifies our dedication. With their unparalleled technological prowess, we continue to" +
-        "deliver top-tier solutions for all your agreement2",
-    },
-    {
-      id: 3,
-      img: `${partner}`,
-      content:
-        "Our collaboration with the revered Nvidia Inception " +
-        "Program amplifies our dedication. With their unparalleled technological prowess, we continue to" +
-        "deliver top-tier solutions for all your agreement3",
-    },
-  ];
 
-  const [selectData, setSelectData] = useState(carouselSlidesData[0]);
+
+  const [selectData, setSelectData] = useState(partnerData[0]);
 
   const handleClick = (ele, id) => {
     setSelectData({ ...selectData, img: ele.img, content: ele.content });
@@ -56,7 +31,7 @@ const Partners = React.forwardRef((props, ref)  => {
         </div>
 
         <div className="carousel">
-          {carouselSlidesData.map((ele, id) => {
+          {partnerData.map((ele, id) => {
             return <a className="carousel-link" onClick={() => handleClick(ele, id)} key={id}></a>;
           })}
         </div>

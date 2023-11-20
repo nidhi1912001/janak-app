@@ -25,59 +25,60 @@
       letter-spacing: 1px;
       background: none;
       border: none;
-      
+
     }
 
     .page-btn:focus {
       text-decoration: underline;
       text-decoration-color: #f4bf19;
       text-underline-offset: 50%;
-      text-decoration-thickness:3px;
+      text-decoration-thickness: 3px;
       color: $blue-color;
     }
 
   }
-}
 
-.user-login {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  background-color:$blue-color;
-  border-radius: 60px;
-  padding: 12px 25px;
 
-  .login-signUp{
+  .user-login {
     display: flex;
-    gap: 5px;
     align-items: center;
-  }
+    gap: 30px;
+    background-color: $blue-color;
+    border-radius: 60px;
+    padding: 12px 25px;
 
-  .login, .signup {
-    text-decoration: none;
-  .login,
-  .signup {
-    background: none;
-    border: none;
-    color: white;
-    font-family: 'Poppins';
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 1px;
-  }
-  .slash{
-    color: white;
-    font-size: 25px;
-    font-weight: 500;
-    text-align: center;
-  }
+    .login-signUp {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+    }
 
-  .icon {
-    color: white;
+    .login,
+    .signup {
+      background: none;
+      border: none;
+      color: white;
+      font-family: 'Poppins';
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+
+    .slash {
+      color: white;
+      font-size: 25px;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .icon {
+      color: white;
+    }
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
+
+@media only screen and (min-width: 375px) and (max-width: 768px) {
   .main {
     .logo-mobile {
       display: none;
@@ -126,4 +127,4 @@
 
 
 
-}
+

@@ -21,6 +21,7 @@
         left: 50px;
         width: 58px;
         margin: auto;
+        background-color: white;
       }
 
       .vector-right {
@@ -61,7 +62,7 @@
 
     }
 
-    .viewAll {
+    .view-all {
       background-color: $blue-color;
       border-radius: 68px;
       width: max-content;
@@ -73,6 +74,7 @@
       .viewAll-news {
         font-family: Poppins;
         font-size: 18px;
+        font-weight: 500;
         line-height: 23.76px;
         align-self: center;
         color: rgba(255, 255, 255, 1);
@@ -131,7 +133,7 @@
         }
       }
 
-      .viewAll {
+      .view-all {
         padding: 8px 16px;
 
         .viewAll-news {
