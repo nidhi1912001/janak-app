@@ -1,18 +1,16 @@
-@import "../../global";
-
+@use "../../global.scss";
+@import "../../global.scss";
 
 .contact {
   .contact-top {
     background-color: $blue-color;
 
-
     .container {
       display: grid;
       grid-template-columns: 50% 50%;
+      padding: 100px 0px;
       align-items: center;
       position: relative;
-      padding: 110px 0px;
-
 
       .subscribe-label {
         font-family: Poppins;
@@ -75,7 +73,11 @@
   }
 
   .contact-bottom {
-    background-image: radial-gradient(circle, rgba(25, 46, 107, 1), rgba(9, 20, 55, 1));
+    background-image: radial-gradient(
+      circle,
+      rgba(25, 46, 107, 1),
+      rgba(9, 20, 55, 1)
+    );
     padding: 112px 0px;
 
 
@@ -128,8 +130,10 @@
           display: flex;
           justify-content: space-between;
         }
+
         .colB-left {
           display: grid;
+          gap: 10px;
 
           .colB-section {
             display: grid;
@@ -145,7 +149,6 @@
               line-height: 28px;
               text-align: left;
             }
-
           }
         }
 
@@ -166,6 +169,7 @@
             }
           }
         }
+
       }
 
       .contact-bottom-bottom {
@@ -191,8 +195,8 @@
           color: var(--accent-300, #CFCFD1);
           font-family: Poppins;
           font-size: 15px;
-          font-weight: 500;
-          line-height: 22px
+          font-weight: 200;
+          line-height: 22px;
         }
       }
     }
@@ -209,12 +213,10 @@
 
         .subscribe-label {
           font-size: 25px;
-          font-weight: 500;
           line-height: 32px;
           text-align: center;
           padding: 0;
         }
-
         .subscribe-input {
           width: auto;
           height: 45px;
@@ -223,7 +225,6 @@
         ::placeholder {
           font-size: 12px;
         }
-
         .subscribe-button {
           font-size: 12px;
           padding: 3px 10px;
@@ -236,10 +237,8 @@
 
     .contact-bottom {
       padding: 50px 0px;
-
       .container {
         gap: 30px;
-
         .contact-bottom-top {
           display: grid;
           grid-template-columns: 100%;
@@ -248,46 +247,35 @@
           .contact-bottom-colA {
             display: grid;
             gap: 15px;
-
             .colA-info {
               .contact-logo {
                 width: 150px;
                 margin: auto;
               }
-
               .colA-contain {
                 font-size: 14px;
-                font-weight: 300;
+                font-weight: 100;
                 margin: auto;
                 text-align: center;
               }
-
               .socialMedia {
                 margin: auto;
               }
             }
-
             .colA-border {
               border-bottom: 1px solid rgba(255, 255, 255, 0.13);
             }
           }
-
           .contact-bottom-colB {
             display: grid;
-            gap: 40px;
+            gap: 30px;
             margin: auto;
 
             .colB-left {
               justify-content: center;
-              gap: 10px;
 
               .colB-section {
                 justify-content: center;
-
-                .section {
-                  font-size: 16px;
-                  font-weight: 300;
-                }
               }
             }
 
@@ -295,26 +283,19 @@
               .contact-address {
                 .address-details {
                   font-size: 16px;
-                  font-weight: 300;
+                  font-weight: 100;
                 }
               }
             }
           }
         }
-
         .contact-bottom-bottom {
           gap: 10px;
-
           .livechat {
             .liveChat-img {
               width: 40px;
               padding: 8px;
             }
-          }
-
-          .copyright {
-            font-size: 13px;
-            font-weight: 300;
           }
         }
       }
@@ -325,25 +306,22 @@
 @media (min-width: 426px) and (max-width: 768px) {
   .contact {
     .contact-top {
-      .container {
+      .container{
         grid-template-columns: 100%;
-        gap: 40px;
-        padding: 60px 0;
+        gap: 30px;
+        padding: 50px 0;
 
-        .subscribe-label {
-          font-size: 38px;
-          text-align: center;
-          line-height: 58px;
-          font-weight: 500;
+        .subscribe-label{
+           font-size: 35px;
+           text-align: center;
+           line-height: 60px;
         }
-
-        .subscribe-input {
-          height: 55px;
+        .subscribe-input{
+            height: 55px;
         }
-
-        .subscribe-button {
+        .subscribe-button{
           gap: 40px;
-          bottom: 65px;
+          bottom: 18%;
           right: 10px;
           font-size: 15px;
           padding: 3px 10px;
@@ -361,7 +339,6 @@
         .contact-bottom-top {
           grid-template-columns: 100%;
           gap: 40px;
-
           .contact-bottom-colA {
             display: grid;
             gap: 45px;
@@ -370,42 +347,21 @@
               .contact-logo {
                 margin: auto;
               }
-
               .colA-contain {
-                font-weight: 200;
                 text-align: center;
               }
-
               .socialMedia {
                 margin: auto;
               }
             }
-
             .colA-border {
               border-bottom: 1px solid rgba(255, 255, 255, 0.13);
             }
           }
-
           .contact-bottom-colB {
             justify-content: space-around;
-
             .colB-left {
               gap: 10px;
-
-              .colB-section {
-                .section {
-                  font-weight: 300;
-
-                }
-              }
-            }
-
-            .colB-right {
-              .contact-address {
-                .address-details {
-                  font-weight: 200;
-                }
-              }
             }
           }
         }

@@ -1,5 +1,5 @@
 import React from 'react'
-import "./About.scss"
+import "./about.scss"
 import employee from "../../Assets/image/employees-brainstorming.png"
 import Container from "../../Component/Container/Container";
 
@@ -10,8 +10,8 @@ const About=React.forwardRef((props, ref)  =>{
          <div className="about-left">
            <img  className="img-employee" src={employee}  alt="employee"/>
            <div className="box">
-             <span className="ten">10<sup>+</sup></span>
-             <span className="experience">YEARS OF EXPERIENCE</span>
+             <div className="ten">10<sup>+</sup></div>
+             <div className="experience">YEARS OF EXPERIENCE</div>
            </div>
          </div>
 

@@ -1,3 +1,6 @@
+import React, { forwardRef } from "react";
+import "./Header.scss";
+import logo from "../../Assets/image/logo.png";
 import React, { forwardRef, useState } from 'react'
 import './Header.scss'
 import logo from "../../Assets/image/logo.png"
